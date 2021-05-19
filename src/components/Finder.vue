@@ -23,7 +23,7 @@
       <div class="reversible-section">
         <div class="container mx-auto">
           <div
-            class="grid md:grid-flow-col sm:grid-flow-row gap-12 md:mx-56 sm:mx-10 mx-10 my-10"
+            class="grid md:grid-flow-col sm:grid-flow-row gap-12 mx-10 my-10"
           >
             <label
               @click="changeLevel('next', stroller)"
@@ -70,21 +70,49 @@
     <!-- First level end -->
 
     <!-- Next level start -->
-    <div v-if="nextLevel">
-      <a @click="changeLevel('first')" class="text-joie_text" href="#"
-        >start a new search</a
-      >
-      <Level
-        @nextlevel="nextLevelCount"
-        @parentevent="showGG"
-        :data="nextLevelData"
-      ></Level>
+    <div class="">
+      <div class="flex flex-col h-screen" v-if="nextLevel">
+        <div class="container mx-auto my-10 flex gap-2 items-start">
+          <div class="text-joie_text header-subtitle">&#60;</div>
+          <a
+            @click="changeLevel('first')"
+            class="text-joie_text header-subtitle underline"
+            href="#"
+            >start a new search</a
+          >
+        </div>
+        <div class="text-center my-5">
+          <h1 class="text-joie_text header-text">{{ currentTitle }}</h1>
+          <h2 class="header-subtitle text-joie_text-light">
+            {{ currentSubtitle }}
+          </h2>
+        </div>
+        <Level
+          class="flex-grow"
+          @nextlevel="nextLevelCount"
+          @parentevent="showGG"
+          :data="nextLevelData"
+        ></Level>
+
+        <div style="background-color: #f5f5f6" class="py-10 flex items-center gap-20 px-10" v-if="finalData">
+          <div class="flex items-center gap-2" v-for="r in finalData" :key="r.id">
+            <svg style="color:#cbdb2a" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+</svg>
+            <div style="
+                  font-size: 19px;
+                  font-weight: 600;
+                  font-family: 'GothamRounded-Medium';
+                "
+                class="text-joie_text_dark"> {{ r.name }} </div>
+                <img class="w-20" :src="r.image">
+            </div>
+           
+        </div>
+      </div>
     </div>
     <!-- Next level end -->
 
-    <ul v-if="finalData">
-      <li v-for="r in finalData" :key="r.id">{{ r.name }}</li>
-    </ul>
     <!-- <h1>result : {{ finalData }}</h1> -->
     <div></div>
   </div>
@@ -101,6 +129,8 @@ export default {
     return {
       finalData: [],
       levelID: 1,
+      currentTitle: "",
+      currentSubtitle: "",
       isActive: false,
       firstLevel: true,
       nextLevel: false,
@@ -112,59 +142,44 @@ export default {
           id: 1,
           name: "param",
           image: "/pram_sky.png",
-          data: [
-            {
-              id: 1,
-              name: "air wheels",
-              description: "short explanation of where to use these wheels",
-              image: "/pram_sky.png",
-              data: [
-                {
-                  id: 1,
-                  name: "air wheels",
-                  description: "short explanation of where to use these wheels",
-                  image: "/pram_sky.png",
-                },
-                {
-                  id: 1,
-                  name: "air wheels new",
-                  description: "short explanation of where to use these wheels",
-                  image: "/pram_sky.png",
-                  data: [
-                    {
-                      id: 1,
-                      name: "air wheels new",
-                      description: "short explanation of where to use these wheels",
-                      image: "/pram_sky.png",
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              id: 1,
-              name: "EVA sheels",
-              description: "short explanation of where to use these wheels",
-              image: "/pram_sky.png",
-            },
-            {
-              id: 1,
-              name: "Test",
-              description: "short explanation of where to use these wheels",
-              image: "/pram_sky.png",
-            },
-          ],
         },
         {
           id: 2,
           name: "stroller",
-          image: "/pram_sky.png",
-          data: null,
+          image: "/stoller_sky.png",
+          title: "choose your preferred buggy",
+          subtitle: "please choose one",
+          data: [
+            {
+              id: 34,
+              name: "sporty, all around stroller",
+              image: "/sporty_sky.png",
+            },
+            {
+              id: 34,
+              name: "lightweight stroller",
+              image: "/lightweight_sky.png",
+              title: "choose your preferred fold",
+              subtitle: "please choose one",
+              data: [
+                {
+                  id: 34,
+                  name: "schirmbuggy (umbrella fold)",
+                  image: "/umbrella_fold_sky.png",
+                },
+                {
+                  id: 34,
+                  name: "kompaktbuggy (compact fold)",
+                  image: "/compact_fold_sky.png",
+                },
+              ],
+            },
+          ],
         },
         {
           id: 3,
           name: "double",
-          image: "/pram_sky.png",
+          image: "/double_sky.png",
           data: null,
         },
       ],
@@ -177,9 +192,11 @@ export default {
       // this.pickedNext.push(this.picked);
       console.log(this.finalData.length);
       if (this.finalData.length > 1) {
-        // this.finalData.pop();
+        this.finalData.pop();
       }
       this.finalData.push(event);
+      this.currentTitle = event.title;
+      this.currentSubtitle = event.subtitle;
     },
 
     nextLevelCount: function (event) {
@@ -192,6 +209,8 @@ export default {
         // console.log(data);
         this.firstLevel = false;
         this.nextLevel = true;
+        this.currentTitle = data.title;
+        this.currentSubtitle = data.subtitle;
       }
 
       if (level == "first") {

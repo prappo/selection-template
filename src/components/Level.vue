@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="container mx-auto">
     <div v-if="finalData == null">sorry no data available</div>
 
-    <div v-if="finalData">
+    <div class="mx-20" v-if="finalData">
       <div class="container mx-auto">
         <div
-          class="grid md:grid-flow-col sm:grid-flow-row gap-12 md:mx-56 sm:mx-10 mx-10 my-10"
+          class="grid md:grid-flow-col sm:grid-flow-row gap-12 grid-cols-3  mx-10 my-10"
         >
           <label
             @click="goNext(stroller)"
@@ -19,8 +19,9 @@
                 font-size: 19px;
                 font-weight: 600;
                 font-family: 'GothamRounded-Medium';
+                padding:20px;
               "
-              class="text-joie_text_dark"
+              class="text-joie_text_dark mx-10"
             >
               {{ stroller.name }}
             </div>
