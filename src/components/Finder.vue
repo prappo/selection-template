@@ -1,5 +1,6 @@
 <template>
   <div>
+    
     <!-- First level start -->
     <div v-show="firstLevel">
       <div class="text-center my-5">
@@ -23,7 +24,7 @@
       <div class="reversible-section">
         <div class="container mx-auto">
           <div
-            class="grid md:grid-flow-col sm:grid-flow-row gap-12 mx-10 my-10"
+            class="grid md:grid-flow-col sm:grid-flow-row gap-12 mx-32 my-10"
           >
             <label
               @click="changeLevel('next', stroller)"
@@ -90,24 +91,52 @@
         <Level
           class="flex-grow"
           @nextlevel="nextLevelCount"
-          @parentevent="showGG"
+          @parentevent="dataReceiver"
+          @title="changeTitle"
+          @subtitle="changeSubtitle"
+          @finish="finishTask"
+          @steps="changeSteps"
           :data="nextLevelData"
+          v-if="!resultPage"
         ></Level>
 
-        <div style="background-color: #f5f5f6" class="py-10 flex items-center gap-20 px-10" v-if="finalData">
-          <div class="flex items-center gap-2" v-for="r in finalData" :key="r.id">
-            <svg style="color:#cbdb2a" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-</svg>
-            <div style="
-                  font-size: 19px;
-                  font-weight: 600;
-                  font-family: 'GothamRounded-Medium';
-                "
-                class="text-joie_text_dark"> {{ r.name }} </div>
-                <img class="w-20" :src="r.image">
+        <Result v-if="resultPage"></Result>
+
+        <div
+          style="background-color: #f5f5f6"
+          class="py-10 grid grid-cols-3 items-center gap-20 px-10"
+          v-if="finalData"
+        >
+          <div
+            class="flex items-center gap-2"
+            v-for="r in finalData"
+            :key="r.id"
+          >
+            <svg
+              style="color: #cbdb2a"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <div
+              style="
+                font-size: 19px;
+                font-weight: 600;
+                font-family: 'GothamRounded-Medium';
+              "
+              class="text-joie_text_dark"
+            >
+              {{ r.name }}
             </div>
-           
+            <img class="w-20" :src="r.image" />
+          </div>
         </div>
       </div>
     </div>
@@ -120,14 +149,16 @@
 
 <script>
 import Level from "./Level.vue";
+import Result from "./Result.vue"
 
 export default {
   components: {
-    Level,
+    Level, Result
   },
   data() {
     return {
       finalData: [],
+      resultPage: false,
       levelID: 1,
       currentTitle: "",
       currentSubtitle: "",
@@ -137,6 +168,7 @@ export default {
       picked: null,
       pickedNext: [],
       nextLevelData: null,
+      steps: 0 ,
       strollers: [
         {
           id: 1,
@@ -154,6 +186,8 @@ export default {
               id: 34,
               name: "sporty, all around stroller",
               image: "/sporty_sky.png",
+              title: "Sporty",
+              subtitle: "please choose one",
             },
             {
               id: 34,
@@ -171,6 +205,15 @@ export default {
                   id: 34,
                   name: "kompaktbuggy (compact fold)",
                   image: "/compact_fold_sky.png",
+                  data: [
+                    {
+                      id: 314,
+                      name: "lightweight ww stroller",
+                      image: "/lightweight_sky.png",
+                      title: "choose your preferred fold",
+                      subtitle: "please choose one",
+                    },
+                  ],
                 },
               ],
             },
@@ -187,21 +230,43 @@ export default {
   },
 
   methods: {
-    showGG: function (event) {
-      console.log("Found event : " + event);
-      // this.pickedNext.push(this.picked);
-      console.log(this.finalData.length);
-      if (this.finalData.length > 1) {
+    finishTask: function (event) {
+      console.log("Finish task triggered");
+      console.log(event);
+      // alert("Now result will show")
+      this.resultPage = true;
+      this.currentTitle = "we have 2 perfect strollers!"
+      this.currentSubtitle = "";
+      
+    },
+    changeTitle: function (event) {
+      this.currentTitle = event;
+    },
+    changeSubtitle: function (event) {
+      this.currentSubtitle = event;
+    },
+    dataReceiver: function (event) {
+      console.log(this.steps);
+      console.log('items ' + this.finalData.length + ' and steps ' + this.steps)
+      if (this.finalData.length > this.steps) {
         this.finalData.pop();
       }
+
       this.finalData.push(event);
-      this.currentTitle = event.title;
-      this.currentSubtitle = event.subtitle;
+
+      if (event.title) {
+        this.currentTitle = event.title;
+        this.currentSubtitle = event.subtitle;
+      }
+    },
+
+    changeSteps:function(data){
+      this.steps = data;
     },
 
     nextLevelCount: function (event) {
       this.levelID += 1;
-      console.log("Level : " + this.levelID);
+      // console.log("Level : " + this.levelID);
     },
     changeLevel: function (level, data = null) {
       if (level == "next") {
@@ -217,6 +282,7 @@ export default {
         this.firstLevel = true;
         this.nextLevel = false;
         this.picked = null;
+        this.resultPage = false;
         this.finalData = [];
       }
     },
