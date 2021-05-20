@@ -10,7 +10,7 @@
       </div>
       <div
         class="banner-image bg-scroll"
-        style="background-image: url('http://localhost:3000/banner.jpg')"
+        style="background-image: url('/banner.jpg')"
       ></div>
       <div class="container mx-auto">
         <h1 class="text-joie_text header-text text-center my-5 mx-5">
