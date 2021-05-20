@@ -24,7 +24,7 @@
       <div class="reversible-section">
         <div class="container mx-auto">
           <div
-            class="grid md:grid-flow-col sm:grid-flow-row gap-12 mx-32 my-10"
+            class="grid md:px-40 md:grid-flow-col sm:grid-flow-row gap-12 my-10"
           >
             <label
               @click="changeLevel('next', stroller)"

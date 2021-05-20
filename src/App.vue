@@ -39,11 +39,29 @@ body {
   font-weight: 100;
 }
 
+.stroller-box{
+  width:300px;
+  
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   /* mobile */
   .header-text {
     font-size: 30px;
     font-family: "GothamRounded-Medium";
+  }
+
+  .stroller-box{
+    width: 100%;
+  }
+
+  .stroller-holder{
+    flex-direction: column;
+  }
+
+  .grid{
+    padding-left: 20px;
+    padding-right: 20px;;
   }
 
   .header-subtitle {

@@ -7,14 +7,15 @@
       sorry no data available
     </div>
 
-    <div class="mx-20" v-if="finalData">
-      <div class="container mx-auto">
+    <div class="" v-if="finalData">
+      <div class="">
         <div
-          class="grid align-middle md:grid-flow-col sm:grid-flow-row gap-12 grid-cols-3 mx-10 my-10"
+          class="flex stroller-holder justify-center gap-10"
         >
-          <div v-for="stroller in finalData" :key="stroller.id">
+          <div style="padding-left:10px; padding-right:10px" v-for="stroller in finalData" :key="stroller.id">
             <label
-              class="flex text-center cursor-pointer w-full space-x-10 md:space-x-0 justify-between flex-row-reverse md:flex-col md:justify-items-center items-center md:py-20 border-2 border-joie_text_light hover:border-joie_text_dark"
+              
+              class="flex stroller-box text-center cursor-pointer  md:space-x-0 justify-between flex-row-reverse md:flex-col md:justify-items-center items-center md:py-20 border-2 border-joie_text_light hover:border-joie_text_dark"
             >
               <img class="w-40" :src="stroller.image" />
               <div

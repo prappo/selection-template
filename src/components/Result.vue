@@ -5,39 +5,23 @@
         
         <thead>
           <tr>
-            <th>Teams</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
-            <th>7</th>
-            <th>8</th>
-            <th>9</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
+            <th></th>
+            <th>description</th>
+            <th>colors</th>
+            <th>retailers</th>
+            <th>weight</th>
+            <th>dimensions</th>
+            <th>wheel size</th>
+            <th>max child weight</th>
+            <th>infant seats</th>
+            <th>carry cots</th>
+            <th>flex comfort seat</th>
+            <th>height adjust seat</th>
+            <th>reversible seat</th>
+            <th>one-hand fold</th>
+            <th>armbar</th>
+            <th>recline positions</th>
+            
           </tr>
 
            <tr>
@@ -52,28 +36,13 @@
             <td>4</td>
             <td>4</td>
             <td>22</td>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
-            <th>Runs</th>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+            
+            
           </tr>
         </thead>
         <tbody>
@@ -86,20 +55,26 @@
 
 <style scoped>
 table {
-  font-family: "Fraunces", serif;
-  font-size: 125%;
+  font-family: "GothamRounded-Medium";
+  font-size: 100%;
   white-space: nowrap;
   margin: 0;
   border: none;
   border-collapse: separate;
   border-spacing: 0;
   table-layout: fixed;
-  border: 1px solid black;
+  
 }
-table td,
+table td{
+  border: 2px solid #f5f5f6;
+  
+}
 table th {
-  border: 1px solid black;
-  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-bottom: none;
+  background-color: #f5f5f6 !important;
+  padding: 10px  !important;
+  color: #1B3D6F !important;
 }
 table thead th {
   padding: 3px;
