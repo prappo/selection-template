@@ -1,6 +1,5 @@
 <template>
   <div>
-    
     <!-- First level start -->
     <div v-show="firstLevel">
       <div class="text-center my-5">
@@ -55,7 +54,7 @@
         </div>
 
         <div class="container mx-auto">
-          <p class="mx-10 description">
+          <p class="mx-10 my-16 description">
             Für dein Neugeborenes bietet sich ein Kombikinderwagen mit Babywanne
             an, den du später zum Sportwagen umbauen kannst. Der robuste, aber
             trotzdem wendige Sportwagen kommt zum Einsatz, sobald dein Nachwuchs
@@ -149,11 +148,12 @@
 
 <script>
 import Level from "./Level.vue";
-import Result from "./Result.vue"
+import Result from "./Result.vue";
 
 export default {
   components: {
-    Level, Result
+    Level,
+    Result,
   },
   data() {
     return {
@@ -168,16 +168,18 @@ export default {
       picked: null,
       pickedNext: [],
       nextLevelData: null,
-      steps: 0 ,
+      steps: 0,
       strollers: [
         {
           id: 1,
           name: "param",
           image: "/pram_sky.png",
+          description: "short explanation of where to use these wheels",
         },
         {
           id: 2,
           name: "stroller",
+          description: "short explanation of where to use these wheels",
           image: "/stoller_sky.png",
           title: "choose your preferred buggy",
           subtitle: "please choose one",
@@ -185,6 +187,7 @@ export default {
             {
               id: 34,
               name: "sporty, all around stroller",
+              description: "short explanation of where to use these wheels",
               image: "/sporty_sky.png",
               title: "Sporty",
               subtitle: "please choose one",
@@ -192,6 +195,7 @@ export default {
             {
               id: 34,
               name: "lightweight stroller",
+              description: "short explanation of where to use these wheels",
               image: "/lightweight_sky.png",
               title: "choose your preferred fold",
               subtitle: "please choose one",
@@ -199,16 +203,22 @@ export default {
                 {
                   id: 34,
                   name: "schirmbuggy (umbrella fold)",
+                  description: "short explanation of where to use these wheels",
                   image: "/umbrella_fold_sky.png",
                 },
                 {
                   id: 34,
                   name: "kompaktbuggy (compact fold)",
+                  description: "short explanation of where to use these wheels",
+                  title: "choose your preferred fold",
+                  subtitle: "please choose one",
                   image: "/compact_fold_sky.png",
                   data: [
                     {
                       id: 314,
                       name: "lightweight ww stroller",
+                      description:
+                        "short explanation of where to use these wheels",
                       image: "/lightweight_sky.png",
                       title: "choose your preferred fold",
                       subtitle: "please choose one",
@@ -222,6 +232,7 @@ export default {
         {
           id: 3,
           name: "double",
+          description: "short explanation of where to use these wheels",
           image: "/double_sky.png",
           data: null,
         },
@@ -235,9 +246,8 @@ export default {
       console.log(event);
       // alert("Now result will show")
       this.resultPage = true;
-      this.currentTitle = "we have 2 perfect strollers!"
+      this.currentTitle = "we have 2 perfect strollers!";
       this.currentSubtitle = "";
-      
     },
     changeTitle: function (event) {
       this.currentTitle = event;
@@ -247,7 +257,9 @@ export default {
     },
     dataReceiver: function (event) {
       console.log(this.steps);
-      console.log('items ' + this.finalData.length + ' and steps ' + this.steps)
+      console.log(
+        "items " + this.finalData.length + " and steps " + this.steps
+      );
       if (this.finalData.length > this.steps) {
         this.finalData.pop();
       }
@@ -260,7 +272,7 @@ export default {
       }
     },
 
-    changeSteps:function(data){
+    changeSteps: function (data) {
       this.steps = data;
     },
 
