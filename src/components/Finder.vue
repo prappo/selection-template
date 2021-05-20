@@ -31,7 +31,7 @@
               :key="stroller.id"
               class="flex cursor-pointer w-full space-x-10 md:space-x-0 justify-between flex-row-reverse md:flex-col md:justify-items-center items-center md:py-20 border-2 border-joie_text_light hover:border-joie_text_dark"
             >
-              <img class="w-40" :src="stroller.image" />
+              <img class="w-40 stroller-image" :src="stroller.image" />
               <div
                 style="
                   font-size: 19px;
@@ -173,57 +173,89 @@ export default {
         {
           id: 1,
           name: "param",
-          image: "/pram_sky.png",
+          image: "/pram_periwinkle.png",
           description: "short explanation of where to use these wheels",
         },
         {
           id: 2,
           name: "stroller",
           description: "short explanation of where to use these wheels",
-          image: "/stoller_sky.png",
+          image: "/stroller_periwinkle.png",
           title: "choose your preferred buggy",
           subtitle: "please choose one",
           data: [
             {
               id: 34,
               name: "sporty, all around stroller",
-              description: "short explanation of where to use these wheels",
-              image: "/sporty_sky.png",
-              title: "Sporty",
+              // description: "short explanation of where to use these wheels",
+              image: "/sporty_periwinkle.png",
+              title: "choose your preferred wheels",
               subtitle: "please choose one",
+              data: [
+                {
+                  id: 34,
+                  name: "EVA wheels",
+                  description: "short explanation of where to use these wheels",
+                  image: "/eva_wheels_periwinkle.png",
+                  title: "height adjustable pushbar?",
+                  subtitle: "please choose one",
+                  data: [
+                    {
+                      id: 34,
+                      name: "YES, adjustable pushbar",
+                      // description: "short explanation of where to use these wheels",
+                      image: "/adjustable_armbar_periwinkle.png",
+                      title: "height adjustable pushbar?",
+                      subtitle: "please choose one",
+                    },
+                    {
+                      id: 34,
+                      name: "NO, stationary pushbar",
+                      // description: "short explanation of where to use these wheels",
+                      image: "/armbar_periwinkle.png",
+                      title: "height adjustable pushbar?",
+                      subtitle: "please choose one",
+                    },
+                  ],
+                },
+                {
+                  name: "air wheels",
+                  description: "short explanation of where to use these wheels",
+                  image: "/air_wheels_periwinkle.png",
+                  title: "height adjustable pushbar?",
+                  subtitle: "please choose one",
+                },
+                {
+                  name: "foam filled wheels",
+                  description: "short explanation of where to use these wheels",
+                  image: "/foam_wheels_periwinkle.png",
+                  title: "height adjustable pushbar?",
+                  subtitle: "please choose one",
+                },
+              ],
             },
             {
               id: 34,
               name: "lightweight stroller",
-              description: "short explanation of where to use these wheels",
-              image: "/lightweight_sky.png",
+              // description: "short explanation of where to use these wheels",
+              image: "/lightweight_periwinkle.png",
               title: "choose your preferred fold",
               subtitle: "please choose one",
               data: [
                 {
                   id: 34,
                   name: "schirmbuggy (umbrella fold)",
-                  description: "short explanation of where to use these wheels",
-                  image: "/umbrella_fold_sky.png",
+                  // description: "short explanation of where to use these wheels",
+                  image: "/umbrella_fold_periwinkle.png",
                 },
                 {
                   id: 34,
                   name: "kompaktbuggy (compact fold)",
-                  description: "short explanation of where to use these wheels",
+                  // description: "short explanation of where to use these wheels",
                   title: "choose your preferred fold",
                   subtitle: "please choose one",
-                  image: "/compact_fold_sky.png",
-                  data: [
-                    {
-                      id: 314,
-                      name: "lightweight ww stroller",
-                      description:
-                        "short explanation of where to use these wheels",
-                      image: "/lightweight_sky.png",
-                      title: "choose your preferred fold",
-                      subtitle: "please choose one",
-                    },
-                  ],
+                  image: "/compact_fold_periwinkle.png",
+                  
                 },
               ],
             },
@@ -233,7 +265,7 @@ export default {
           id: 3,
           name: "double",
           description: "short explanation of where to use these wheels",
-          image: "/double_sky.png",
+          image: "/double_periwinkle.png",
           data: null,
         },
       ],

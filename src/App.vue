@@ -37,6 +37,14 @@ body {
   height: 460px;
 }
 
+.stroller-image{
+  filter: opacity(0.6);
+}
+
+.stroller-image:hover{
+  filter: opacity(1);
+}
+
 .description {
   font-size: 23px;
   font-family: 'Gotham Rounded', sans-serif;
@@ -45,7 +53,7 @@ body {
 
 .stroller-box{
   width:300px;
-  
+  height: 430px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
