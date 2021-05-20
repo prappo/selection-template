@@ -14,15 +14,19 @@ import Footer from "./components/Footer.vue";
 
 <style>
 body {
-  font-family: "GothamRounded-Medium";
+  /* font-family: "GothamRounded-Medium"; */
+  font-family: 'Gotham Rounded', sans-serif;
+}
+.bold{
+  font-weight: 500;
 }
 .header-text {
   font-size: 49px;
-  font-family: "GothamRounded-Medium";
+  font-family: 'Gotham Rounded', sans-serif;
 }
 .header-subtitle {
   font-size: 27px;
-  font-family: "GothamRounded-Medium";
+  font-family: 'Gotham Rounded', sans-serif;
   font-weight: thin;
 }
 
@@ -35,7 +39,7 @@ body {
 
 .description {
   font-size: 23px;
-  font-family: "GothamRounded-Medium";
+  font-family: 'Gotham Rounded', sans-serif;
   font-weight: 100;
 }
 
@@ -48,7 +52,7 @@ body {
   /* mobile */
   .header-text {
     font-size: 30px;
-    font-family: "GothamRounded-Medium";
+    font-family: 'Gotham Rounded', sans-serif;
   }
 
   .stroller-box{

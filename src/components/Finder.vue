@@ -100,11 +100,11 @@
           v-if="!resultPage"
         ></Level>
 
-        <Result v-if="resultPage"></Result>
+        <Result class="flex-grow" v-if="resultPage"></Result>
 
         <div
           style="background-color: #f5f5f6"
-          class="py-10 grid grid-cols-3 items-center gap-20 px-10"
+          class="py-10 grid grid-cols-3 items-center gap-10 px-20"
           v-if="finalData"
         >
           <div

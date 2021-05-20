@@ -10,7 +10,7 @@
     <div class="" v-if="finalData">
       <div class="">
         <div
-          class="flex stroller-holder justify-center gap-10"
+          class="flex py-10 stroller-holder justify-center gap-10"
         >
           <div style="padding-left:10px; padding-right:10px" v-for="stroller in finalData" :key="stroller.id">
             <label
