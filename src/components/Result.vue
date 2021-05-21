@@ -4,7 +4,7 @@
     
 
     <div class="" role="region" aria-labelledby="caption" tabindex="0">
-      <lottie-player v-if="swipe" src="https://assets10.lottiefiles.com/temp/lf20_isMAFS.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px; position:absolute;z-index:100;right:20px"  loop  autoplay></lottie-player>
+      <!-- <lottie-player v-if="swipe" src="https://assets10.lottiefiles.com/temp/lf20_isMAFS.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px; position:absolute;z-index:100;right:20px"  loop  autoplay></lottie-player> -->
       <table class="text-joie_text">
         
         <thead>
