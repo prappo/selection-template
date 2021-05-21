@@ -519,7 +519,16 @@ export default {
   methods:{
     defaultAction: function(){
       this.swipe = false;
+    },
+    handleScroll: function (event) {
+     this.swipe = false;
     }
-  }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
 }
 </script>
