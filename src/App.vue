@@ -58,6 +58,13 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   /* mobile */
+  .selected-item-name{
+    flex-grow: 1;
+  }
+  .selected-items{
+    background-color: white !important;
+    padding: 10px !important;
+  }
   .header-text {
     font-size: 30px;
     font-family: 'Gotham Rounded', sans-serif;
@@ -65,6 +72,23 @@ body {
 
   .stroller-box{
     width: 100%;
+    height: auto;
+    
+  }
+
+  .stroller-name{
+    padding:0px  !important;
+    margin: 0px !important;
+    text-align: left !important;
+  }
+
+  .stroller-description {
+    text-align: left !important;
+  }
+
+  .stroller-text-section{
+    display: flex;
+    flex-direction: column;
   }
 
   .stroller-holder{

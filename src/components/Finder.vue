@@ -103,7 +103,7 @@
 
         <div
           style="background-color: #f5f5f6"
-          class="py-10 grid grid-cols-3 items-center gap-10 px-20"
+          class="py-10 grid md:grid-cols-3 sm:grid-flow-row items-center gap-10 px-20 selected-items"
           v-if="finalData"
         >
           <div
@@ -130,7 +130,7 @@
                 font-weight: 600;
                 font-family: 'GothamRounded-Medium';
               "
-              class="text-joie_text_dark"
+              class="text-joie_text_dark selected-item-name"
             >
               {{ r.name }}
             </div>

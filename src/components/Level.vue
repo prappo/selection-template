@@ -18,6 +18,7 @@
               class="flex px-5 stroller-box text-center cursor-pointer  md:space-x-0 justify-between flex-row-reverse md:flex-col md:justify-items-center items-center md:py-20 border-2 border-joie_text_light hover:border-joie_text_dark"
             >
               <img class="w-40 stroller-image" :src="stroller.image" />
+              <div class="stroller-text-section">
               <div
                 style="
                   font-size: 19px;
@@ -25,11 +26,12 @@
                   font-family: 'GothamRounded-Medium';
                   padding: 20px 20px 10px 20px;
                 "
-                class="text-joie_text_dark mx-10"
+                class="text-joie_text_dark mx-10 stroller-name"
               >
                 {{ stroller.name }}
               </div>
-              <div v-if="stroller.description" style="font-family: 'Gotham Rounded', sans-serif; font-weight:200; font-size:15px" class="">{{ stroller.description }}</div>
+              <div v-if="stroller.description" style="font-family: 'Gotham Rounded', sans-serif; font-weight:200; font-size:15px" class="stroller-description">{{ stroller.description }}</div>
+              </div>
               <input
                 :value="stroller"
                 name="stroller"
