@@ -1,7 +1,12 @@
 <template>
-  <div class="container mx-auto my-10">
+  <div @click="defaultAction" class="container mx-auto my-10">
+
+    
+
     <div class="" role="region" aria-labelledby="caption" tabindex="0">
+      <lottie-player v-if="swipe" src="https://assets10.lottiefiles.com/temp/lf20_isMAFS.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px; position:absolute;z-index:100;right:20px"  loop  autoplay></lottie-player>
       <table class="text-joie_text">
+        
         <thead>
           <tr>
             <th></th>
@@ -35,8 +40,8 @@
           <tr>
             <th style="background: white !important">
               <img src="https://via.placeholder.com/150" />
-              <div class="w-32"></div>
-              <div class="py-5">Product Name</div>
+              <div class="w-32 spacer"></div>
+              <div class="py-5 product-name">Product Name</div>
             </th>
             <td>
               <div class="w-40 px-2 py-2">
@@ -503,3 +508,18 @@ caption {
   outline: 0;
 }
 </style>
+
+<script>
+export default {
+  data(){
+    return {
+      swipe: true,
+    }
+  },
+  methods:{
+    defaultAction: function(){
+      this.swipe = false;
+    }
+  }
+}
+</script>

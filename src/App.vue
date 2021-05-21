@@ -58,6 +58,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   /* mobile */
+  
   .selected-item-name{
     flex-grow: 1;
   }
