@@ -10,7 +10,7 @@
       </div>
       <div
         class="banner-image bg-scroll"
-        style="background-image: url('/banner.jpg')"
+        :style="{backgroundImage: 'url(' + bannerUrl + ')'}"
       ></div>
       <div class="container mx-auto">
         <h1 class="text-joie_text header-text text-center my-5 mx-5">
@@ -168,6 +168,7 @@ export default {
       picked: null,
       pickedNext: [],
       nextLevelData: null,
+      bannerUrl: 'https://raw.githubusercontent.com/prappo/selection-template/main/public/banner.jpg',
       steps: 0,
       strollers: [
         {
