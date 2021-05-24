@@ -22,7 +22,12 @@
       </div>
       <div class="reversible-section">
         <div class="container mx-auto">
+        
+          <h1 v-if="strollers == null" class="text-joie_text header-text text-center my-5 mx-5">
+          {{ waitMessage}}
+         </h1>
           <div
+            v-if="strollers"
             class="grid md:px-40 md:grid-flow-col sm:grid-flow-row gap-12 my-10"
           >
             <label
@@ -71,7 +76,7 @@
 
     <!-- Next level start -->
     <div class="">
-      <div class="flex flex-col h-screen" v-if="nextLevel">
+      <div class="flex flex-col h-full" v-if="nextLevel">
         <div class="container mx-auto my-10 flex gap-2 items-start">
           <div class="text-joie_text header-subtitle">&#60;</div>
           <a
@@ -149,6 +154,7 @@
 <script>
 import Level from "./Level.vue";
 import Result from "./Result.vue";
+import axios from "axios"
 
 export default {
   components: {
@@ -159,6 +165,7 @@ export default {
     return {
       finalData: [],
       resultPage: false,
+      waitMessage: 'Please wait',
       levelID: 1,
       currentTitle: "",
       currentSubtitle: "",
@@ -170,106 +177,7 @@ export default {
       nextLevelData: null,
       bannerUrl: 'https://raw.githubusercontent.com/prappo/selection-template/main/public/banner.jpg',
       steps: 0,
-      strollers: [
-        {
-          id: 1,
-          name: "param",
-          image: "https://raw.githubusercontent.com/prappo/selection-template/main/public/pram_periwinkle.png",
-          description: "short explanation of where to use these wheels",
-        },
-        {
-          id: 2,
-          name: "stroller",
-          description: "short explanation of where to use these wheels",
-          image: "https://raw.githubusercontent.com/prappo/selection-template/main/public/stroller_periwinkle.png",
-          title: "choose your preferred buggy",
-          subtitle: "please choose one",
-          data: [
-            {
-              id: 34,
-              name: "sporty, all around stroller",
-              // description: "short explanation of where to use these wheels",
-              image: "https://raw.githubusercontent.com/prappo/selection-template/main/public/sporty_periwinkle.png",
-              title: "choose your preferred wheels",
-              subtitle: "please choose one",
-              data: [
-                {
-                  id: 34,
-                  name: "EVA wheels",
-                  description: "short explanation of where to use these wheels",
-                  image: "https://raw.githubusercontent.com/prappo/selection-template/main/public/eva_wheels_periwinkle.png",
-                  title: "height adjustable pushbar?",
-                  subtitle: "please choose one",
-                  data: [
-                    {
-                      id: 34,
-                      name: "YES, adjustable pushbar",
-                      // description: "short explanation of where to use these wheels",
-                      image: "https://raw.githubusercontent.com/prappo/selection-template/main/public/adjustable_armbar_periwinkle.png",
-                      title: "height adjustable pushbar?",
-                      subtitle: "please choose one",
-                    },
-                    {
-                      id: 34,
-                      name: "NO, stationary pushbar",
-                      // description: "short explanation of where to use these wheels",
-                      image: "https://raw.githubusercontent.com/prappo/selection-template/main/public/armbar_periwinkle.png",
-                      title: "height adjustable pushbar?",
-                      subtitle: "please choose one",
-                    },
-                  ],
-                },
-                {
-                  name: "air wheels",
-                  description: "short explanation of where to use these wheels",
-                  image: "https://raw.githubusercontent.com/prappo/selection-template/main/public/air_wheels_periwinkle.png",
-                  title: "height adjustable pushbar?",
-                  subtitle: "please choose one",
-                },
-                {
-                  name: "foam filled wheels",
-                  description: "short explanation of where to use these wheels",
-                  image: "https://raw.githubusercontent.com/prappo/selection-template/main/public/foam_wheels_periwinkle.png",
-                  title: "height adjustable pushbar?",
-                  subtitle: "please choose one",
-                },
-              ],
-            },
-            {
-              id: 34,
-              name: "lightweight stroller",
-              // description: "short explanation of where to use these wheels",
-              image: "https://raw.githubusercontent.com/prappo/selection-template/main/public/lightweight_periwinkle.png",
-              title: "choose your preferred fold",
-              subtitle: "please choose one",
-              data: [
-                {
-                  id: 34,
-                  name: "schirmbuggy (umbrella fold)",
-                  // description: "short explanation of where to use these wheels",
-                  image: "https://raw.githubusercontent.com/prappo/selection-template/main/public/umbrella_fold_periwinkle.png",
-                },
-                {
-                  id: 34,
-                  name: "kompaktbuggy (compact fold)",
-                  // description: "short explanation of where to use these wheels",
-                  title: "choose your preferred fold",
-                  subtitle: "please choose one",
-                  image: "https://raw.githubusercontent.com/prappo/selection-template/main/public/compact_fold_periwinkle.png",
-                  
-                },
-              ],
-            },
-          ],
-        },
-        {
-          id: 3,
-          name: "double",
-          description: "short explanation of where to use these wheels",
-          image: "https://raw.githubusercontent.com/prappo/selection-template/main/public/double_periwinkle.png",
-          data: null,
-        },
-      ],
+      strollers: null,
     };
   },
 
@@ -331,6 +239,30 @@ export default {
         this.finalData = [];
       }
     },
+    async fetchData() {
+      try {
+        const url = `http://joie-stroller-finder.local/wp-json/joie/v1/stroller/category`
+        const response = await axios.get(url)
+        const results = response.data;
+        this.strollers = results;
+        console.log(this.strollers);
+      } catch (err) {
+        if (err.response) {
+          // client received an error response (5xx, 4xx)
+          this.waitMessage = "Something went wrong"
+          console.log("Server Error:", err)
+        } else if (err.request) {
+          // client never received a response, or request never left
+          console.log("Network Error:", err)
+        } else {
+          console.log("Client Error:", err)
+        }
+      }
+  }
+  },
+
+  mounted(){
+    this.fetchData();
   },
 
   created() {

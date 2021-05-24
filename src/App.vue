@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-screen">
+  <div class="flex flex-col h-full">
     <Finder></Finder>
   </div>
 </template>
@@ -9,24 +9,38 @@ import Header from "./components/Header.vue";
 import Hero from "./components/Hero.vue";
 import Finder from "./components/Finder.vue";
 import Footer from "./components/Footer.vue";
-
 </script>
 
 <style>
-body {
-  /* font-family: "GothamRounded-Medium"; */
-  font-family: 'Gotham Rounded', sans-serif;
+#app {
+  padding-top: 100px;
 }
-.bold{
+
+.border-2 {
+  border: 2px solid #a5c8e1;
+}
+.border-2:hover {
+  border: 2px solid #1b3d6f;
+}
+body,
+p,
+a {
+  /* font-family: "GothamRounded-Medium"; */
+  font-family: "Gotham Rounded", sans-serif;
+}
+p,a{
+  font-weight: 400;
+}
+.bold {
   font-weight: 500;
 }
 .header-text {
   font-size: 49px;
-  font-family: 'Gotham Rounded', sans-serif;
+  font-family: "Gotham Rounded", sans-serif;
 }
 .header-subtitle {
   font-size: 27px;
-  font-family: 'Gotham Rounded', sans-serif;
+  font-family: "Gotham Rounded", sans-serif;
   font-weight: thin;
 }
 
@@ -37,48 +51,47 @@ body {
   height: 460px;
 }
 
-.stroller-image{
+.stroller-image {
   filter: opacity(0.6);
 }
 
-.stroller-image:hover{
+.stroller-image:hover {
   filter: opacity(1);
 }
 
 .description {
   font-size: 23px;
-  font-family: 'Gotham Rounded', sans-serif;
+  font-family: "Gotham Rounded", sans-serif;
   font-weight: 100;
 }
 
-.stroller-box{
-  width:300px;
+.stroller-box {
+  width: 300px;
   height: 430px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   /* mobile */
-  
-  .selected-item-name{
+
+  .selected-item-name {
     flex-grow: 1;
   }
-  .selected-items{
+  .selected-items {
     background-color: white !important;
     padding: 10px !important;
   }
   .header-text {
     font-size: 30px;
-    font-family: 'Gotham Rounded', sans-serif;
+    font-family: "Gotham Rounded", sans-serif;
   }
 
-  .stroller-box{
+  .stroller-box {
     width: 100%;
     height: auto;
-    
   }
 
-  .stroller-name{
-    padding:0px  !important;
+  .stroller-name {
+    padding: 0px !important;
     margin: 0px !important;
     text-align: left !important;
   }
@@ -87,18 +100,18 @@ body {
     text-align: left !important;
   }
 
-  .stroller-text-section{
+  .stroller-text-section {
     display: flex;
     flex-direction: column;
   }
 
-  .stroller-holder{
+  .stroller-holder {
     flex-direction: column;
   }
 
-  .grid{
+  .grid {
     padding-left: 20px;
-    padding-right: 20px;;
+    padding-right: 20px;
   }
 
   .header-subtitle {
@@ -122,7 +135,7 @@ body {
     height: 120px;
   }
 
-  .w-40{
+  .w-40 {
     width: 8rem;
   }
 }
