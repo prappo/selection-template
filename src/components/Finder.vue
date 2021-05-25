@@ -3,29 +3,32 @@
     <!-- First level start -->
     <div v-show="firstLevel">
       <div class="text-center my-5">
-        <h1 class="text-joie_text header-text">find your stroller</h1>
+        <h1 class="text-joie_text header-text">{{ pageTitle }}</h1>
+        <h1 v-if="!pageTitle" class="text-joie_text header-text">Please Wait..</h1>
         <h2 class="header-subtitle text-joie_text-light">
-          stroll about with a perfect match
+          {{ pageSubtitle }}
         </h2>
       </div>
       <div
         class="banner-image bg-scroll"
-        :style="{backgroundImage: 'url(' + bannerUrl + ')'}"
+        :style="{ backgroundImage: 'url(' + bannerUrl + ')' }"
       ></div>
       <div class="container mx-auto">
         <h1 class="text-joie_text header-text text-center my-5 mx-5">
-          what kind of stroller are you looking for?
+          {{ underBannerTitle }}
         </h1>
         <h2 class="header-subtitle text-joie_text-light italic text-center">
-          please choose one
+          {{ underBannerSubtitle }}
         </h2>
       </div>
       <div class="reversible-section">
         <div class="container mx-auto">
-        
-          <h1 v-if="strollers == null" class="text-joie_text header-text text-center my-5 mx-5">
-          {{ waitMessage}}
-         </h1>
+          <h1
+            v-if="strollers == null"
+            class="text-joie_text header-text text-center my-5 mx-5"
+          >
+            {{ waitMessage }}
+          </h1>
           <div
             v-if="strollers"
             class="grid md:px-40 md:grid-flow-col sm:grid-flow-row gap-12 my-10"
@@ -60,14 +63,7 @@
 
         <div class="container mx-auto">
           <p class="mx-10 my-16 description">
-            Für dein Neugeborenes bietet sich ein Kombikinderwagen mit Babywanne
-            an, den du später zum Sportwagen umbauen kannst. Der robuste, aber
-            trotzdem wendige Sportwagen kommt zum Einsatz, sobald dein Nachwuchs
-            sitzen kann und begleitet dich tagein tagaus und oft jahrelang. Ein
-            leichter Buggy hingegen ist kleiner und wird meist eher sporadisch
-            genutzt, auch als Zweitwagen oder für den Urlaub. Geschwisterwagen
-            können zwei Kinder – egal ob gleichen oder unterschiedlichen Alters
-            – gleichzeitig transportieren.
+            {{ pageDescription }}
           </p>
         </div>
       </div>
@@ -83,7 +79,7 @@
             @click="changeLevel('first')"
             class="text-joie_text header-subtitle underline"
             href="#"
-            >start a new search</a
+            >{{ startNewSearchText }}</a
           >
         </div>
         <div class="text-center my-5">
@@ -154,7 +150,7 @@
 <script>
 import Level from "./Level.vue";
 import Result from "./Result.vue";
-import axios from "axios"
+import axios from "axios";
 
 export default {
   components: {
@@ -165,7 +161,16 @@ export default {
     return {
       finalData: [],
       resultPage: false,
-      waitMessage: 'Please wait',
+      waitMessage: document.getElementById("app").getAttribute("data-wait-message"),
+      startNewSearchText: document.getElementById("app").getAttribute("data-start-new-search-text"),
+      pageTitle: document.getElementById("app").getAttribute("data-page-title"),
+      pageSubtitle: document.getElementById("app").getAttribute("data-page-subtitle"),
+      pageDescription: document.getElementById("app").getAttribute("data-page-description"),
+      underBannerTitle: document.getElementById("app").getAttribute("data-under-banner-title"),
+      underBannerSubtitle: document.getElementById("app").getAttribute("data-under-banner-subtitle"),
+      bannerUrl:document.getElementById("app").getAttribute("data-banner-url"),
+      restURL: document.getElementById("app").getAttribute("data-url"),
+      settingsURL: document.getElementById("app").getAttribute("data-settings-url"),
       levelID: 1,
       currentTitle: "",
       currentSubtitle: "",
@@ -175,7 +180,6 @@ export default {
       picked: null,
       pickedNext: [],
       nextLevelData: null,
-      bannerUrl: 'https://raw.githubusercontent.com/prappo/selection-template/main/public/banner.jpg',
       steps: 0,
       strollers: null,
     };
@@ -241,27 +245,29 @@ export default {
     },
     async fetchData() {
       try {
-        const url = `http://joie-stroller-finder.local/wp-json/joie/v1/stroller/category`
-        const response = await axios.get(url)
+        const url = this.restURL;
+        const response = await axios.get(url);
         const results = response.data;
         this.strollers = results;
         console.log(this.strollers);
       } catch (err) {
         if (err.response) {
           // client received an error response (5xx, 4xx)
-          this.waitMessage = "Something went wrong"
-          console.log("Server Error:", err)
+          this.waitMessage = "Something went wrong";
+          console.log("Server Error:", err);
         } else if (err.request) {
           // client never received a response, or request never left
-          console.log("Network Error:", err)
+          console.log("Network Error:", err);
         } else {
-          console.log("Client Error:", err)
+          console.log("Client Error:", err);
         }
       }
-  }
+    },
+  
   },
 
-  mounted(){
+  mounted() {
+    
     this.fetchData();
   },
 
