@@ -4,7 +4,9 @@
     <div v-show="firstLevel">
       <div class="text-center my-5">
         <h1 class="text-joie_text header-text">{{ pageTitle }}</h1>
-        <h1 v-if="!pageTitle" class="text-joie_text header-text">Please Wait..</h1>
+        <h1 v-if="!pageTitle" class="text-joie_text header-text">
+          Please Wait..
+        </h1>
         <h2 class="header-subtitle text-joie_text-light">
           {{ pageSubtitle }}
         </h2>
@@ -37,7 +39,7 @@
               @click="changeLevel('next', stroller)"
               v-for="stroller in strollers"
               :key="stroller.id"
-              class="flex cursor-pointer w-full space-x-10 md:space-x-0 justify-between flex-row-reverse md:flex-col md:justify-items-center items-center md:py-20 border-2 border-joie_text_light hover:border-joie_text_dark"
+              class="flex joie-font cursor-pointer w-full space-x-10 md:space-x-0 justify-between flex-row-reverse md:flex-col md:justify-items-center items-center md:py-20 border-2 border-joie_text_light hover:border-joie_text_dark"
             >
               <img class="w-40 stroller-image" :src="stroller.image" />
               <div
@@ -46,7 +48,7 @@
                   font-weight: 600;
                   font-family: 'GothamRounded-Medium';
                 "
-                class="text-joie_text_dark"
+                class="text-joie_text_dark joie-font"
               >
                 {{ stroller.name }}
               </div>
@@ -100,7 +102,7 @@
           v-if="!resultPage"
         ></Level>
 
-        <Result class="flex-grow" v-if="resultPage"></Result>
+        <Result :data="searachResults" class="flex-grow" v-if="searachResults"></Result>
 
         <div
           style="background-color: #f5f5f6"
@@ -160,17 +162,32 @@ export default {
   data() {
     return {
       finalData: [],
+      searachResults: null,
       resultPage: false,
-      waitMessage: document.getElementById("app").getAttribute("data-wait-message"),
-      startNewSearchText: document.getElementById("app").getAttribute("data-start-new-search-text"),
+      waitMessage: document
+        .getElementById("app")
+        .getAttribute("data-wait-message"),
+      startNewSearchText: document
+        .getElementById("app")
+        .getAttribute("data-start-new-search-text"),
       pageTitle: document.getElementById("app").getAttribute("data-page-title"),
-      pageSubtitle: document.getElementById("app").getAttribute("data-page-subtitle"),
-      pageDescription: document.getElementById("app").getAttribute("data-page-description"),
-      underBannerTitle: document.getElementById("app").getAttribute("data-under-banner-title"),
-      underBannerSubtitle: document.getElementById("app").getAttribute("data-under-banner-subtitle"),
-      bannerUrl:document.getElementById("app").getAttribute("data-banner-url"),
+      pageSubtitle: document
+        .getElementById("app")
+        .getAttribute("data-page-subtitle"),
+      pageDescription: document
+        .getElementById("app")
+        .getAttribute("data-page-description"),
+      underBannerTitle: document
+        .getElementById("app")
+        .getAttribute("data-under-banner-title"),
+      underBannerSubtitle: document
+        .getElementById("app")
+        .getAttribute("data-under-banner-subtitle"),
+      bannerUrl: document.getElementById("app").getAttribute("data-banner-url"),
       restURL: document.getElementById("app").getAttribute("data-url"),
-      settingsURL: document.getElementById("app").getAttribute("data-settings-url"),
+      settingsURL: document
+        .getElementById("app")
+        .getAttribute("data-settings-url"),
       levelID: 1,
       currentTitle: "",
       currentSubtitle: "",
@@ -188,11 +205,21 @@ export default {
   methods: {
     finishTask: function (event) {
       console.log("Finish task triggered");
-      console.log(event);
+      // console.log(event);
       // alert("Now result will show")
-      this.resultPage = true;
-      this.currentTitle = "we have 2 perfect strollers!";
+
+      // this.currentTitle = "we have 2 perfect strollers!";
+      this.currentTitle = "Please Wait...";
       this.currentSubtitle = "";
+       this.resultPage = true;
+      console.log(this.finalData);
+
+      setTimeout(function () {
+        this.currentTitle = "we have 2 perfect strollers!";
+        this.searachResults = [
+          'some','data'
+        ];
+      }.bind(this), 3000);
     },
     changeTitle: function (event) {
       this.currentTitle = event;
@@ -201,10 +228,10 @@ export default {
       this.currentSubtitle = event;
     },
     dataReceiver: function (event) {
-      console.log(this.steps);
-      console.log(
-        "items " + this.finalData.length + " and steps " + this.steps
-      );
+      // console.log(this.steps);
+      // console.log(
+      //   "items " + this.finalData.length + " and steps " + this.steps
+      // );
       if (this.finalData.length > this.steps) {
         this.finalData.pop();
       }
@@ -233,6 +260,13 @@ export default {
         this.nextLevel = true;
         this.currentTitle = data.title;
         this.currentSubtitle = data.subtitle;
+        if (data.data == undefined) {
+          this.finishTask(data);
+          // this.resultPage = true;
+          return;
+        }
+
+        return;
       }
 
       if (level == "first") {
@@ -240,6 +274,7 @@ export default {
         this.nextLevel = false;
         this.picked = null;
         this.resultPage = false;
+        this.searachResults = null;
         this.finalData = [];
       }
     },
@@ -249,7 +284,7 @@ export default {
         const response = await axios.get(url);
         const results = response.data;
         this.strollers = results;
-        console.log(this.strollers);
+        // console.log(this.strollers);
       } catch (err) {
         if (err.response) {
           // client received an error response (5xx, 4xx)
@@ -257,17 +292,16 @@ export default {
           console.log("Server Error:", err);
         } else if (err.request) {
           // client never received a response, or request never left
+          this.waitMessage = "Something went wrong";
           console.log("Network Error:", err);
         } else {
           console.log("Client Error:", err);
         }
       }
     },
-  
   },
 
   mounted() {
-    
     this.fetchData();
   },
 

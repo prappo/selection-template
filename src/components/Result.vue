@@ -1,5 +1,5 @@
 <template>
-  <div @click="defaultAction" class="container mx-auto my-10">
+  <div v-if="show" @click="defaultAction" class="container mx-auto my-10">
 
     
 
@@ -511,10 +511,18 @@ caption {
 
 <script>
 export default {
+  props: ["data"],
   data(){
     return {
       swipe: true,
+      show: false,
     }
+  },
+  mounted(){
+    if(this.data){
+        this.show = true;
+    }
+    console.log(this.data);
   },
   methods:{
     defaultAction: function(){

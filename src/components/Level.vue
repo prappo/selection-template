@@ -1,11 +1,11 @@
 <template>
   <div class="container mx-auto">
-    <div
+    <!-- <div
       class="w-full text-center header-text text-joie_text"
       v-if="finalData == null"
     >
       sorry no data available
-    </div>
+    </div> -->
 
     <div class="" v-if="finalData">
       <div class="">
@@ -26,11 +26,11 @@
                   font-family: 'GothamRounded-Medium';
                   padding: 20px 20px 10px 20px;
                 "
-                class="text-joie_text_dark mx-10 stroller-name"
+                class="text-joie_text_dark mx-10 stroller-name joie-font"
               >
                 {{ stroller.name }}
               </div>
-              <div v-if="stroller.description" style="font-family: 'Gotham Rounded', sans-serif; font-weight:200; font-size:15px" class="stroller-description">{{ stroller.description }}</div>
+              <div v-if="stroller.description" style="font-family: 'Gotham Rounded', sans-serif; font-weight:200; font-size:15px" class="stroller-description joie-font">{{ stroller.description }}</div>
               </div>
               <input
                 :value="stroller"
@@ -69,7 +69,7 @@ export default {
       // this.pickedItem = stroller;
 
       // this.steps++;
-      console.log(this.levelID);
+      // console.log(this.levelID);
       this.$emit('steps',this.levelID);
       if (stroller.data != undefined) {
         // console.log("Found more data");

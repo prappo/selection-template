@@ -22,9 +22,7 @@ import Footer from "./components/Footer.vue";
 .border-2:hover {
   border: 2px solid #1b3d6f;
 }
-body,
-p,
-a {
+.joie-font {
   /* font-family: "GothamRounded-Medium"; */
   font-family: "Gotham Rounded", sans-serif;
 }
