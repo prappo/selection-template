@@ -1,0 +1,109 @@
+[{
+        "product_name": "Product 1",
+        "product_image": "https://via.placeholder.com/150",
+        "product_description": "Lorem ipsum dolor sit amet, ectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, tetuer adipiscing elit,",
+        "colors": [{
+                "name": "swatch",
+                "color": "red"
+            },
+            {
+                "name": "swatch",
+                "color": "red"
+            },
+            {
+                "name": "swatch",
+                "color": "red"
+            }
+        ],
+        "retailers": [{
+            "link": "https://google.com"
+        }],
+        "weight": "00.00kg",
+        "dimensions": {
+            "Open": {
+                "height:": "00 cm",
+                "width:": "00 cm",
+                "length": "00 cm"
+            },
+            "Folded:": {
+                "height:": "00 cm",
+                "width:": "00 cm",
+                "lenght:": "00 cm"
+            }
+        },
+        "wheel_size": "00.00 cm",
+        "max_child_weight": "00.00 kg",
+        "infant_seats": [
+            "1 Product Name",
+            "1 Product Name",
+            "1 Product Name",
+            "1 Product Name"
+        ],
+        "carry_cots": [
+            "1 Product Name",
+            "1 Product Name",
+            "1 Product Name",
+            "1 Product Name"
+        ],
+        "flex_comfort_seat": "yes",
+        "height_adjust_seat": "no",
+        "reversible_seat": "no",
+        "one_hand_fold": "yes",
+        "armbar": "no",
+        "recline_positions": 3
+    },
+    {
+        "product_name": "Product 2",
+        "product_image": "https://via.placeholder.com/150",
+        "product_description": "Lorem ipsum dolor sit amet, ectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, tetuer adipiscing elit,",
+        "colors": [{
+                "name": "swatch",
+                "color": "red"
+            },
+            {
+                "name": "swatch",
+                "color": "red"
+            },
+            {
+                "name": "swatch",
+                "color": "red"
+            }
+        ],
+        "retailers": [{
+            "link": "https://google.com"
+        }],
+        "weight": "00.00kg",
+        "dimensions": {
+            "Open": {
+                "height:": "00 cm",
+                "width:": "00 cm",
+                "length": "00 cm"
+            },
+            "Folded:": {
+                "height:": "00 cm",
+                "width:": "00 cm",
+                "lenght:": "00 cm"
+            }
+        },
+        "wheel_size": "00.00 cm",
+        "max_child_weight": "00.00 kg",
+        "infant_seats": [
+            "1 Product Name",
+            "1 Product Name",
+            "1 Product Name",
+            "1 Product Name"
+        ],
+        "carry_cots": [
+            "1 Product Name",
+            "1 Product Name",
+            "1 Product Name",
+            "1 Product Name"
+        ],
+        "flex_comfort_seat": "yes",
+        "height_adjust_seat": "no",
+        "reversible_seat": "no",
+        "one_hand_fold": "yes",
+        "armbar": "no",
+        "recline_positions": 3
+    }
+]

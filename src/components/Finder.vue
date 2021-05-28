@@ -102,7 +102,11 @@
           v-if="!resultPage"
         ></Level>
 
-        <Result :data="searachResults" class="flex-grow" v-if="searachResults"></Result>
+        <Result
+          :data="searachResults"
+          class="flex-grow"
+          v-if="searachResults"
+        ></Result>
 
         <div
           style="background-color: #f5f5f6"
@@ -199,6 +203,7 @@ export default {
       nextLevelData: null,
       steps: 0,
       strollers: null,
+      searchURL: document.getElementById("app").getAttribute("data-search-url"),
     };
   },
 
@@ -208,18 +213,23 @@ export default {
       // console.log(event);
       // alert("Now result will show")
 
-      // this.currentTitle = "we have 2 perfect strollers!";
+      this.currentTitle = "we have 2 perfect strollers!";
       this.currentTitle = "Please Wait...";
       this.currentSubtitle = "";
-       this.resultPage = true;
-      console.log(this.finalData);
+      this.resultPage = true;
 
-      setTimeout(function () {
-        this.currentTitle = "we have 2 perfect strollers!";
-        this.searachResults = [
-          'some','data'
-        ];
-      }.bind(this), 3000);
+      // let cats = [];
+
+      // for (const key in this.finalData) {
+      //   console.log(this.finalData[key]);
+      //   cats.push(this.finalData[key]);
+      // }
+
+      // const categories = cats.toString();
+
+      this.fetchResults();
+
+      console.log('Finished searching');
     },
     changeTitle: function (event) {
       this.currentTitle = event;
@@ -284,6 +294,33 @@ export default {
         const response = await axios.get(url);
         const results = response.data;
         this.strollers = results;
+        // console.log(this.strollers);
+      } catch (err) {
+        if (err.response) {
+          // client received an error response (5xx, 4xx)
+          this.waitMessage = "Something went wrong";
+          console.log("Server Error:", err);
+        } else if (err.request) {
+          // client never received a response, or request never left
+          this.waitMessage = "Something went wrong";
+          console.log("Network Error:", err);
+        } else {
+          console.log("Client Error:", err);
+        }
+      }
+    },
+
+    async fetchResults(config = null) {
+      try {
+        const url = this.searchURL;
+        const response = await axios.get(url);
+        const results = response.data;
+        this.searachResults = results;
+        let plural = 's';
+        if(results.length <= 1) {
+          plural = '';
+        }
+        this.currentTitle = `we have ${results.length} perfect stroller${plural}!`;
         // console.log(this.strollers);
       } catch (err) {
         if (err.response) {

@@ -37,72 +37,42 @@
             <th>recline positions</th>
           </tr>
 
-          <tr>
+          <tr v-for="product in data" :key="product.id">
             <th style="background: white !important">
-              <img src="https://via.placeholder.com/150" />
+              <img :src="product.product_image" />
               <div class="w-32 spacer"></div>
-              <div class="py-5 product-name">Product Name</div>
+              <div class="py-5 product-name">{{ product.product_name}}</div>
             </th>
             <td>
               <div class="w-40 px-2 py-2">
-                Lorem ipsum dolor sit amet, ectetuer adipiscing elit, sed diam
-                Lorem ipsum dolor sit amet, tetuer adipiscing elit,
+                {{ product.product_description}}
               </div>
             </td>
             <td>
-              <div class="px-5">
+              <div v-for="swatch in product.colors" :key="swatch" class="px-5">
                 <div style="white-space: nowrap" class="flex gap-2 px-2 py-2">
                   <div
                     style="background: red"
                     class="w-5 h-5 rounded-full"
                   ></div>
-                  <div class="">swatch</div>
+                  <div class="">{{ swatch.name}}</div>
                 </div>
 
-                <div style="white-space: nowrap" class="flex gap-2 px-2 py-2">
-                  <div
-                    style="background: red"
-                    class="w-5 h-5 rounded-full"
-                  ></div>
-                  <div class="">swatch</div>
-                </div>
-
-                <div style="white-space: nowrap" class="flex gap-2 px-2 py-2">
-                  <div
-                    style="background: red"
-                    class="w-5 h-5 rounded-full"
-                  ></div>
-                  <div class="">swatch</div>
-                </div>
-                <div style="white-space: nowrap" class="flex gap-2 px-2 py-2">
-                  <div
-                    style="background: red"
-                    class="w-5 h-5 rounded-full"
-                  ></div>
-                  <div class="">swatch</div>
-                </div>
-
-                <div style="white-space: nowrap" class="flex gap-2 px-2 py-2">
-                  <div
-                    style="background: red"
-                    class="w-5 h-5 rounded-full"
-                  ></div>
-                  <div class="">swatch</div>
-                </div>
+          
               </div>
             </td>
             <td>
-              <div class="flex flex-col justify-center items-center px-10">
+              <div v-for="retailer in product.retailers" :key="retailer" class="flex flex-col justify-center items-center px-10">
                 <div style="white-space: nowrap">click to view</div>
                 <a
-                  href="#"
+                  :href="retailer.link"
                   style="white-space: nowrap; text-decoration: underline"
                   >retail locations</a
                 >
               </div>
             </td>
             <td style="white-space: nowrap">
-              <div class="px-10">00.00 kg</div>
+              <div class="px-10">{{ product.weight }}</div>
             </td>
             <td>
               <div class="px-5 text-left">
@@ -117,9 +87,9 @@
               </div>
             </td>
             <td>
-              <div class="nowrap px-10">00.00 mm</div>
+              <div class="nowrap px-10">{{ product.wheel_size}}</div>
             </td>
-            <td><div class="nowrap px=10">00.00 kg</div></td>
+            <td><div class="nowrap px=10">{{ product.max_child_weight}}</div></td>
             <td>
               <div class="px-5">
                 <div class="nowrap">1. Product name</div>
@@ -144,284 +114,37 @@
             </td>
             <td>
               <div class="flex justify-center items-center">
-                <svg
-                  style="color: #cbdb29"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+              <div v-if="product.flex_comfort_seat == 'yes'" v-html="yesIcon"></div>
+              <div v-else v-html="noIcon"></div>
               </div>
             </td>
             <td>
               <div class="flex justify-center items-center">
-                <svg
-                  style="color: #e16d69"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+               <div v-if="product.height_adjust_seat == 'yes'" v-html="yesIcon"></div>
+              <div v-else v-html="noIcon"></div>
               </div>
             </td>
             <td>
               <div class="flex justify-center items-center">
-                <svg
-                  style="color: #e16d69"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+                <div v-if="product.reversible_seat == 'yes'" v-html="yesIcon"></div>
+              <div v-else v-html="noIcon"></div>
               </div>
             </td>
             <td>
               <div class="flex justify-center items-center">
-                <svg
-                  style="color: #cbdb29"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+               <div v-if="product.one_hand_fold == 'yes'" v-html="yesIcon"></div>
+              <div v-else v-html="noIcon"></div>
               </div>
             </td>
             <td>
               <div class="flex justify-center items-center">
-                <svg
-                  style="color: #e16d69"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+                <div v-if="product.armbar == 'yes'" v-html="yesIcon"></div>
+              <div v-else v-html="noIcon"></div>
               </div>
             </td>
-            <td>3</td>
+            <td>{{ product.recline_positions}}</td>
           </tr>
 
-          <tr>
-            <th style="background: white !important">
-              <img src="https://via.placeholder.com/150" />
-              <div class="w-32"></div>
-              <div class="py-5">Product Name</div>
-            </th>
-            <td>
-              <div class="w-40 px-2 py-2">
-                Lorem ipsum dolor sit amet, ectetuer adipiscing elit, sed diam
-                Lorem ipsum dolor sit amet, tetuer adipiscing elit,
-              </div>
-            </td>
-            <td>
-              <div class="px-5">
-                <div style="white-space: nowrap" class="flex gap-2 px-2 py-2">
-                  <div
-                    style="background: red"
-                    class="w-5 h-5 rounded-full"
-                  ></div>
-                  <div class="">swatch</div>
-                </div>
-
-                <div style="white-space: nowrap" class="flex gap-2 px-2 py-2">
-                  <div
-                    style="background: red"
-                    class="w-5 h-5 rounded-full"
-                  ></div>
-                  <div class="">swatch</div>
-                </div>
-
-                <div style="white-space: nowrap" class="flex gap-2 px-2 py-2">
-                  <div
-                    style="background: red"
-                    class="w-5 h-5 rounded-full"
-                  ></div>
-                  <div class="">swatch</div>
-                </div>
-                <div style="white-space: nowrap" class="flex gap-2 px-2 py-2">
-                  <div
-                    style="background: red"
-                    class="w-5 h-5 rounded-full"
-                  ></div>
-                  <div class="">swatch</div>
-                </div>
-
-                <div style="white-space: nowrap" class="flex gap-2 px-2 py-2">
-                  <div
-                    style="background: red"
-                    class="w-5 h-5 rounded-full"
-                  ></div>
-                  <div class="">swatch</div>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="flex flex-col justify-center items-center px-10">
-                <div style="white-space: nowrap">click to view</div>
-                <a
-                  href="#"
-                  style="white-space: nowrap; text-decoration: underline"
-                  >retail locations</a
-                >
-              </div>
-            </td>
-            <td style="white-space: nowrap">
-              <div class="px-10">00.00 kg</div>
-            </td>
-            <td>
-              <div class="px-5 text-left">
-                <div class="nowrap mt-2 bold">Open</div>
-                <div class="nowrap">height: 00 cm</div>
-                <div class="nowrap">width: 00 cm</div>
-                <div class="nowrap">length: 00 cm</div>
-                <div class="nowrap mt-2 bold">Folded:</div>
-                <div class="nowrap">height: 00 cm</div>
-                <div class="nowrap">width: 00 cm</div>
-                <div class="nowrap">length: 00 cm</div>
-              </div>
-            </td>
-            <td>
-              <div class="nowrap px-10">00.00 mm</div>
-            </td>
-            <td><div class="nowrap px=10">00.00 kg</div></td>
-            <td>
-              <div class="px-5">
-                <div class="nowrap">1. Product name</div>
-
-                <div class="nowrap">2. Product name</div>
-
-                <div class="nowrap">3. Product name</div>
-
-                <div class="nowrap">4. Product name</div>
-              </div>
-            </td>
-            <td>
-              <div class="px-5">
-                <div class="nowrap">1. Product name</div>
-
-                <div class="nowrap">2. Product name</div>
-
-                <div class="nowrap">3. Product name</div>
-
-                <div class="nowrap">4. Product name</div>
-              </div>
-            </td>
-            <td>
-              <div class="flex justify-center items-center">
-                <svg
-                  style="color: #cbdb29"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-            </td>
-            <td>
-              <div class="flex justify-center items-center">
-                <svg
-                  style="color: #e16d69"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-            </td>
-            <td>
-              <div class="flex justify-center items-center">
-                <svg
-                  style="color: #e16d69"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-            </td>
-            <td>
-              <div class="flex justify-center items-center">
-                <svg
-                  style="color: #cbdb29"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-            </td>
-            <td>
-              <div class="flex justify-center items-center">
-                <svg
-                  style="color: #e16d69"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-            </td>
-            <td>3</td>
-          </tr>
         </thead>
         <tbody></tbody>
       </table>
@@ -516,12 +239,39 @@ export default {
     return {
       swipe: true,
       show: false,
+      yesIcon: `<svg
+                  style="color: #cbdb29"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-10 w-10"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>`,
+      noIcon: ` <svg
+                  style="color: #e16d69"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-10 w-10"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                    clip-rule="evenodd"
+                  />
+                </svg>`,
     }
   },
   mounted(){
     if(this.data){
         this.show = true;
     }
+    console.log(this.data.length);
     console.log(this.data);
   },
   methods:{
