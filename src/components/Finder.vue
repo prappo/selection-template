@@ -39,7 +39,23 @@
               @click="changeLevel('next', stroller)"
               v-for="stroller in strollers"
               :key="stroller.id"
-              class="flex joie-font cursor-pointer w-full space-x-10 md:space-x-0 justify-between flex-row-reverse md:flex-col md:justify-items-center items-center md:py-20 border-2 border-joie_text_light hover:border-joie_text_dark"
+              class="
+                flex
+                joie-font
+                cursor-pointer
+                w-full
+                space-x-10
+                md:space-x-0
+                justify-between
+                flex-row-reverse
+                md:flex-col
+                md:justify-items-center
+                items-center
+                md:py-20
+                border-2
+                border-joie_text_light
+                hover:border-joie_text_dark
+              "
             >
               <img class="w-40 stroller-image" :src="stroller.image" />
               <div
@@ -110,7 +126,16 @@
 
         <div
           style="background-color: #f5f5f6"
-          class="py-10 grid md:grid-cols-3 sm:grid-flow-row items-center gap-10 px-20 selected-items"
+          class="
+            py-10
+            grid
+            md:grid-cols-3
+            sm:grid-flow-row
+            items-center
+            gap-10
+            px-20
+            selected-items
+          "
           v-if="finalData"
         >
           <div
@@ -208,28 +233,29 @@ export default {
   },
 
   methods: {
+    scrollToTop: function () {
+      window.scrollTo(0, 0);
+    },
     finishTask: function (event) {
-
       let term_id = null;
 
       console.log("Finish task triggered");
-      if(event != 'yes'){
+      if (event != "yes") {
         // console.log(event.term_id)
         term_id = event.term_id;
       }
 
-
-      if(event == 'yes'){
-        console.log('Yes it is')
+      if (event == "yes") {
+        console.log("Yes it is");
         let t_id = null;
-        for(let a in this.finalData){
+        for (let a in this.finalData) {
           t_id = this.finalData[a].term_id;
         }
 
-        term_id = t_id
+        term_id = t_id;
       }
 
-      console.log(`term id ${term_id}`)
+      console.log(`term id ${term_id}`);
 
       // alert("Now result will show")
 
@@ -239,7 +265,6 @@ export default {
       this.resultPage = true;
 
       // let cats = [];
-      
 
       // for (const key in this.finalData) {
       //   console.log(this.finalData[key]);
@@ -249,10 +274,10 @@ export default {
       // const categories = cats.toString();
 
       this.fetchResults({
-        param: term_id
+        param: term_id,
       });
 
-      console.log('Finished searching');
+      console.log("Finished searching");
     },
     changeTitle: function (event) {
       this.currentTitle = event;
@@ -286,6 +311,7 @@ export default {
       // console.log("Level : " + this.levelID);
     },
     changeLevel: function (level, data = null) {
+      this.scrollToTop();
       if (level == "next") {
         this.nextLevelData = data.data;
         // console.log(data);
@@ -335,21 +361,21 @@ export default {
 
     async fetchResults(config = null) {
       try {
-        const url = this.searchURL + '/?cat=' + config.param;
-        console.log(url)
-        const response = await axios.get(url );
+        const url = this.searchURL + "/?cat=" + config.param;
+        console.log(url);
+        const response = await axios.get(url);
         const results = response.data;
         this.searachResults = results;
-        let plural = 's';
+        let plural = "s";
 
-        if(results.length == 0) {
-          this.currentTitle = "Sorry We did not find any stroller"
+        if (results.length == 0) {
+          this.currentTitle = "Sorry We did not find any stroller";
           this.searachResults = null;
           return;
         }
 
-        if(results.length <= 1) {
-          plural = '';
+        if (results.length <= 1) {
+          plural = "";
         }
         this.currentTitle = `we have ${results.length} perfect stroller${plural}!`;
         // console.log(this.strollers);

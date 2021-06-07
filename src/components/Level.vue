@@ -64,6 +64,7 @@ export default {
   },
   methods: {
     goNextLevel: function (stroller) {
+      window.scrollTo(0, 0);
       //   console.log(data.name);
       //   this.$emit("nextlevel");
       // this.pickedItem = stroller;
