@@ -1,8 +1,6 @@
 <template>
   <div v-if="show" @click="defaultAction" class="container mx-auto my-10">
 
-    
-
     <div class="" role="region" aria-labelledby="caption" tabindex="0">
       <!-- <lottie-player v-if="swipe" src="https://assets10.lottiefiles.com/temp/lf20_isMAFS.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px; position:absolute;z-index:100;right:20px"  loop  autoplay></lottie-player> -->
       <table class="text-joie_text">
@@ -37,113 +35,7 @@
             <th>recline positions</th>
           </tr>
 
-          <tr v-for="product in data" :key="product.id">
-            <th style="background: white !important">
-              <img :src="product.product_image" />
-              <div class="w-32 spacer"></div>
-              <div class="py-5 product-name">{{ product.product_name}}</div>
-            </th>
-            <td>
-              <div class="w-40 px-2 py-2">
-                {{ product.product_description}}
-              </div>
-            </td>
-            <td>
-              <div v-for="swatch in product.colors" :key="swatch" class="px-5">
-                <div style="white-space: nowrap" class="flex gap-2 px-2 py-2">
-                  <div
-                    style="background: red"
-                    class="w-5 h-5 rounded-full"
-                  ></div>
-                  <div class="">{{ swatch.name}}</div>
-                </div>
-
-          
-              </div>
-            </td>
-            <td>
-              <div v-for="retailer in product.retailers" :key="retailer" class="flex flex-col justify-center items-center px-10">
-                <div style="white-space: nowrap">click to view</div>
-                <a
-                  :href="retailer.link"
-                  style="white-space: nowrap; text-decoration: underline"
-                  >retail locations</a
-                >
-              </div>
-            </td>
-            <td style="white-space: nowrap">
-              <div class="px-10">{{ product.weight }}</div>
-            </td>
-            <td>
-              <div class="px-5 text-left">
-                <div class="nowrap mt-2 bold">Open</div>
-                <div class="nowrap">height: 00 cm</div>
-                <div class="nowrap">width: 00 cm</div>
-                <div class="nowrap">length: 00 cm</div>
-                <div class="nowrap mt-2 bold">Folded:</div>
-                <div class="nowrap">height: 00 cm</div>
-                <div class="nowrap">width: 00 cm</div>
-                <div class="nowrap">length: 00 cm</div>
-              </div>
-            </td>
-            <td>
-              <div class="nowrap px-10">{{ product.wheel_size}}</div>
-            </td>
-            <td><div class="nowrap px=10">{{ product.max_child_weight}}</div></td>
-            <td>
-              <div class="px-5">
-                <div class="nowrap">1. Product name</div>
-
-                <div class="nowrap">2. Product name</div>
-
-                <div class="nowrap">3. Product name</div>
-
-                <div class="nowrap">4. Product name</div>
-              </div>
-            </td>
-            <td>
-              <div class="px-5">
-                <div class="nowrap">1. Product name</div>
-
-                <div class="nowrap">2. Product name</div>
-
-                <div class="nowrap">3. Product name</div>
-
-                <div class="nowrap">4. Product name</div>
-              </div>
-            </td>
-            <td>
-              <div class="flex justify-center items-center">
-              <div v-if="product.flex_comfort_seat == 'yes'" v-html="yesIcon"></div>
-              <div v-else v-html="noIcon"></div>
-              </div>
-            </td>
-            <td>
-              <div class="flex justify-center items-center">
-               <div v-if="product.height_adjust_seat == 'yes'" v-html="yesIcon"></div>
-              <div v-else v-html="noIcon"></div>
-              </div>
-            </td>
-            <td>
-              <div class="flex justify-center items-center">
-                <div v-if="product.reversible_seat == 'yes'" v-html="yesIcon"></div>
-              <div v-else v-html="noIcon"></div>
-              </div>
-            </td>
-            <td>
-              <div class="flex justify-center items-center">
-               <div v-if="product.one_hand_fold == 'yes'" v-html="yesIcon"></div>
-              <div v-else v-html="noIcon"></div>
-              </div>
-            </td>
-            <td>
-              <div class="flex justify-center items-center">
-                <div v-if="product.armbar == 'yes'" v-html="yesIcon"></div>
-              <div v-else v-html="noIcon"></div>
-              </div>
-            </td>
-            <td>{{ product.recline_positions}}</td>
-          </tr>
+          <TableRow v-for="product in data" :key="product.id" :product="product"></TableRow>
 
         </thead>
         <tbody></tbody>
@@ -188,11 +80,13 @@ table thead th {
   z-index: 1;
   width: 25vw;
   background: white;
+  vertical-align: middle;
 }
 table td {
   background: #fff;
   padding: 4px 5px;
   text-align: center;
+  vertical-align: middle;
 }
 
 table tbody th {
@@ -233,8 +127,12 @@ caption {
 </style>
 
 <script>
+import TableRow from './TableRow.vue'
 export default {
   props: ["data"],
+  components: {
+    TableRow
+  },
   data(){
     return {
       swipe: true,
@@ -271,8 +169,8 @@ export default {
     if(this.data){
         this.show = true;
     }
-    console.log(this.data.length);
-    console.log(this.data);
+    // console.log(this.data.length);
+    // console.log(this.data);
   },
   methods:{
     defaultAction: function(){

@@ -209,8 +209,28 @@ export default {
 
   methods: {
     finishTask: function (event) {
+
+      let term_id = null;
+
       console.log("Finish task triggered");
-      // console.log(event);
+      if(event != 'yes'){
+        // console.log(event.term_id)
+        term_id = event.term_id;
+      }
+
+
+      if(event == 'yes'){
+        console.log('Yes it is')
+        let t_id = null;
+        for(let a in this.finalData){
+          t_id = this.finalData[a].term_id;
+        }
+
+        term_id = t_id
+      }
+
+      console.log(`term id ${term_id}`)
+
       // alert("Now result will show")
 
       this.currentTitle = "we have 2 perfect strollers!";
@@ -219,6 +239,7 @@ export default {
       this.resultPage = true;
 
       // let cats = [];
+      
 
       // for (const key in this.finalData) {
       //   console.log(this.finalData[key]);
@@ -227,7 +248,9 @@ export default {
 
       // const categories = cats.toString();
 
-      this.fetchResults();
+      this.fetchResults({
+        param: term_id
+      });
 
       console.log('Finished searching');
     },
@@ -312,11 +335,19 @@ export default {
 
     async fetchResults(config = null) {
       try {
-        const url = this.searchURL;
-        const response = await axios.get(url);
+        const url = this.searchURL + '/?cat=' + config.param;
+        console.log(url)
+        const response = await axios.get(url );
         const results = response.data;
         this.searachResults = results;
         let plural = 's';
+
+        if(results.length == 0) {
+          this.currentTitle = "Sorry We did not find any stroller"
+          this.searachResults = null;
+          return;
+        }
+
         if(results.length <= 1) {
           plural = '';
         }

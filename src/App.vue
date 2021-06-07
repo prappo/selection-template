@@ -26,9 +26,9 @@ import Footer from "./components/Footer.vue";
   /* font-family: "GothamRounded-Medium"; */
   font-family: "Gotham Rounded", sans-serif;
 }
-p,a{
+/* p,a{
   font-weight: 400;
-}
+} */
 .bold {
   font-weight: 500;
 }
