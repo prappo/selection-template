@@ -82,15 +82,15 @@
       <div class="px-10">{{ product.weight }}</div>
     </td>
     <td>
-      <div class="px-5 text-left">
+      <div class="px-5 text-left" v-if="product.dimensions">
         <div class="nowrap mt-2 bold">Open</div>
-        <div class="nowrap">height: 00 cm</div>
-        <div class="nowrap">width: 00 cm</div>
-        <div class="nowrap">length: 00 cm</div>
+        <div class="nowrap">height: {{ product.dimensions.open.height}}</div>
+        <div class="nowrap">width: {{ product.dimensions.open.width}}</div>
+        <div class="nowrap">length: {{ product.dimensions.open.length}}</div>
         <div class="nowrap mt-2 bold">Folded:</div>
-        <div class="nowrap">height: 00 cm</div>
-        <div class="nowrap">width: 00 cm</div>
-        <div class="nowrap">length: 00 cm</div>
+        <div class="nowrap">height: {{ product.dimensions.folded.height}}</div>
+        <div class="nowrap">width: {{ product.dimensions.folded.width}}</div>
+        <div class="nowrap">length: {{ product.dimensions.folded.length}}</div>
       </div>
     </td>
     <td>

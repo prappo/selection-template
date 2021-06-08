@@ -28,7 +28,7 @@
                     "price_local": "£299.99",
                     "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?utm_campaign=Joie&utm_source=hatch&merch_id=94149&region=GB&affiliate_id=52993&prod_id=651608163&core_id=95492181",
                     "retailer_id": "5e8b02f64902a900015e71b7",
-                    "source_date": "2021-06-07",
+                    "source_date": "2021-06-08",
                     "stock_info": true,
                     "stock_qty": 1,
                     "subtags": "",
@@ -49,7 +49,7 @@
                     "price_local": "£300.00",
                     "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=91391&region=GB&affiliate_id=52993&prod_id=611559493&core_id=95492181",
                     "retailer_id": "5a8d94df46e0fb00013d85b8",
-                    "source_date": "2021-06-07",
+                    "source_date": "2021-06-08",
                     "stock_info": true,
                     "stock_qty": 1,
                     "subtags": "",
@@ -70,7 +70,7 @@
                     "price_local": "£300.00",
                     "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=88977&region=GB&affiliate_id=52993&prod_id=1161511871&core_id=95492181",
                     "retailer_id": "5a2530cf46e0fb0001b6a092",
-                    "source_date": "2021-06-07",
+                    "source_date": "2021-06-08",
                     "stock_info": true,
                     "stock_qty": 1,
                     "subtags": "",
@@ -91,7 +91,7 @@
                     "price_local": "£300.00",
                     "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?utm_campaign=Joie&utm_source=hatch&merch_id=94497&region=GB&affiliate_id=52993&prod_id=1106795251&core_id=95492181",
                     "retailer_id": "5ea81d6b5b9fc500013b039f",
-                    "source_date": "2021-06-07",
+                    "source_date": "2021-06-08",
                     "stock_info": true,
                     "stock_qty": 1,
                     "subtags": "",
@@ -112,7 +112,7 @@
                     "price_local": "£300.00",
                     "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=89413&region=GB&affiliate_id=52993&prod_id=1109173073&core_id=95492181",
                     "retailer_id": "5ced203546e0fb0001f6a433",
-                    "source_date": "2021-06-07",
+                    "source_date": "2021-06-08",
                     "stock_info": true,
                     "stock_qty": 1,
                     "subtags": "",
@@ -133,7 +133,7 @@
                     "price_local": "£299.99",
                     "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?utm_campaign=Joie&utm_source=hatch&merch_id=94003&region=GB&affiliate_id=52993&prod_id=611377905&core_id=95492181",
                     "retailer_id": "5e81c48b4902a900015f38ef",
-                    "source_date": "2021-06-07",
+                    "source_date": "2021-06-08",
                     "stock_info": true,
                     "stock_qty": 1,
                     "subtags": "",
@@ -154,7 +154,7 @@
                     "price_local": "£299.99",
                     "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=7788&region=GB&affiliate_id=52993&prod_id=544267271&core_id=95492181",
                     "retailer_id": "5a25301b46e0fb0001b69cda",
-                    "source_date": "2021-06-07",
+                    "source_date": "2021-06-08",
                     "stock_info": true,
                     "stock_qty": 1,
                     "subtags": "",
@@ -229,434 +229,121 @@
             ]
         }],
         "weight": "56",
-        "dimensions": {
-            "Open": {
-                "height:": "00 cm",
-                "width:": "00 cm",
-                "length": "00 cm"
-            },
-            "Folded:": {
-                "height:": "00 cm",
-                "width:": "00 cm",
-                "lenght:": "00 cm"
-            }
-        },
-        "wheel_size": "00",
+        "dimensions": null,
+        "wheel_size": "10 mm",
         "max_child_weight": "2",
-        "infant_seats": false,
-        "carry_cots": false,
+        "infant_seats": [{
+                "ID": 300,
+                "post_author": "1",
+                "post_date": "2015-11-11 17:04:14",
+                "post_date_gmt": "2015-11-11 22:04:14",
+                "post_content": "<h2>A lightweight mini for you and your mini's strolling with ease.</h2>\r\n&nbsp;",
+                "post_title": "aire&#x2122; lite",
+                "post_excerpt": "",
+                "post_status": "publish",
+                "comment_status": "open",
+                "ping_status": "closed",
+                "post_password": "",
+                "post_name": "aire-lite",
+                "to_ping": "",
+                "pinged": "",
+                "post_modified": "2020-05-05 10:24:37",
+                "post_modified_gmt": "2020-05-05 14:24:37",
+                "post_content_filtered": "",
+                "post_parent": 0,
+                "guid": "https://www.joiebaby.dev/?post_type=product&#038;p=300",
+                "menu_order": 0,
+                "post_type": "product",
+                "post_mime_type": "",
+                "comment_count": "0",
+                "filter": "raw"
+            },
+            {
+                "ID": 680,
+                "post_author": "49",
+                "post_date": "2015-12-21 12:31:39",
+                "post_date_gmt": "2015-12-21 17:31:39",
+                "post_content": "<h2>An easy tagalong designed to keep baby playing and sleeping at home or on the go. Everything needed for effortless travel in one tidy package.</h2>\r\n&nbsp;",
+                "post_title": "allura&#x2122; 120",
+                "post_excerpt": "",
+                "post_status": "publish",
+                "comment_status": "open",
+                "ping_status": "closed",
+                "post_password": "",
+                "post_name": "allura-120",
+                "to_ping": "",
+                "pinged": "",
+                "post_modified": "2020-07-09 10:21:49",
+                "post_modified_gmt": "2020-07-09 14:21:49",
+                "post_content_filtered": "",
+                "post_parent": 0,
+                "guid": "https://www.joiebaby.dev/?post_type=product&#038;p=680",
+                "menu_order": 0,
+                "post_type": "product",
+                "post_mime_type": "",
+                "comment_count": "0",
+                "filter": "raw"
+            }
+        ],
+        "carry_cots": [{
+                "ID": 267,
+                "post_author": "1",
+                "post_date": "2015-11-11 15:50:33",
+                "post_date_gmt": "2015-11-11 20:50:33",
+                "post_content": "<h2>A spontaneous sidekick in the brisk&#x2122; family, loaded with even more luxury. Packed with all the perks of a full sized stroller in a compact, 3D package.</h2>\r\n&nbsp;",
+                "post_title": "brisk&#x2122; lx",
+                "post_excerpt": "",
+                "post_status": "publish",
+                "comment_status": "open",
+                "ping_status": "closed",
+                "post_password": "",
+                "post_name": "brisk-lx",
+                "to_ping": "",
+                "pinged": "",
+                "post_modified": "2020-05-05 10:10:16",
+                "post_modified_gmt": "2020-05-05 14:10:16",
+                "post_content_filtered": "",
+                "post_parent": 0,
+                "guid": "https://www.joiebaby.dev/?post_type=product&#038;p=267",
+                "menu_order": 0,
+                "post_type": "product",
+                "post_mime_type": "",
+                "comment_count": "0",
+                "filter": "raw"
+            },
+            {
+                "ID": 9848,
+                "post_author": "13027",
+                "post_date": "2018-10-05 15:00:57",
+                "post_date_gmt": "2018-10-05 19:00:57",
+                "post_content": "<h2>A happy space designed to be the perfect play place and secure snoozing spot. This cube shaped cot is the ultimate destination for little developing explorers’ daytime adventures and sleepy time slumbers</h2>",
+                "post_title": "cheer&#x2122;",
+                "post_excerpt": "",
+                "post_status": "publish",
+                "comment_status": "open",
+                "ping_status": "closed",
+                "post_password": "",
+                "post_name": "cheer",
+                "to_ping": "",
+                "pinged": "",
+                "post_modified": "2020-02-18 10:48:20",
+                "post_modified_gmt": "2020-02-18 15:48:20",
+                "post_content_filtered": "",
+                "post_parent": 0,
+                "guid": "https://www.joiebaby.dev/?post_type=product&#038;p=9848",
+                "menu_order": 0,
+                "post_type": "product",
+                "post_mime_type": "",
+                "comment_count": "0",
+                "filter": "raw"
+            }
+        ],
         "flex_comfort_seat": "yes",
         "height_adjust_seat": "yes",
         "reversible_seat": "yes",
         "one_hand_fold": "yes",
         "armbar": "yes",
-        "recline_positions": "0"
-    },
-    {
-        "product_id": 15368,
-        "product_name": "i-Spin Grow",
-        "product_image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/Gallery_ProductImage_700x1050_1-1-150x150.jpg",
-        "product_description": "Meet the first-of-its-kind wunderkind that’s i-Size certified, spins 360°, and made to last for years of “Are we there yet?”",
-        "colors": [{
-                "swatch_name": "Oyster",
-                "swatch_image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/Oyster-Swatch.jpg",
-                "swatch_color": "",
-                "hatch_code": ""
-            },
-            {
-                "swatch_name": "Eclipse",
-                "swatch_image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/Eclipse-Swatch.jpg",
-                "swatch_color": "",
-                "hatch_code": ""
-            },
-            {
-                "swatch_name": "Harbour",
-                "swatch_image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/Harbour-Swatch.jpg",
-                "swatch_color": "",
-                "hatch_code": ""
-            },
-            {
-                "swatch_name": "Cider",
-                "swatch_image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/Cider-Swatch.jpg",
-                "swatch_color": "",
-                "hatch_code": ""
-            },
-            {
-                "swatch_name": "Pine",
-                "swatch_image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/Pine-Swatch.jpg",
-                "swatch_color": "",
-                "hatch_code": ""
-            }
-        ],
-        "hatches": [
-
-        ],
-        "retailers": [
-
-        ],
-        "fashions_data": [{
-                "fashion": {
-                    "ID": 15393,
-                    "post_author": "48",
-                    "post_date": "2021-03-10 13:42:59",
-                    "post_date_gmt": "2021-03-10 18:42:59",
-                    "post_content": "",
-                    "post_title": "Oyster",
-                    "post_excerpt": "",
-                    "post_status": "publish",
-                    "comment_status": "closed",
-                    "ping_status": "closed",
-                    "post_password": "",
-                    "post_name": "oyster",
-                    "to_ping": "",
-                    "pinged": "",
-                    "post_modified": "2021-03-10 13:42:59",
-                    "post_modified_gmt": "2021-03-10 18:42:59",
-                    "post_content_filtered": "",
-                    "post_parent": 0,
-                    "guid": "https://www.joiebaby.dev/?post_type=fashion&#038;p=15393",
-                    "menu_order": 0,
-                    "post_type": "fashion",
-                    "post_mime_type": "",
-                    "comment_count": "0",
-                    "filter": "raw"
-                },
-                "mpn_code": "",
-                "fashion_images": [{
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/OYSTER_Gallery_ProductImage_1-1.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/OYSTER_Gallery_ProductImage_2-2.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/OYSTER_Gallery_ProductImage_3-2.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/OYSTER_Gallery_ProductImage_4-2.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/OYSTER_Gallery_ProductImage_9-1.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/OYSTER_Gallery_ProductImage_5-1.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/OYSTER_Gallery_ProductImage_6-1.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/OYSTER_Gallery_ProductImage_7-1.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/OYSTER_Gallery_ProductImage_8-1.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/OYSTER_Gallery_ProductImage_10-2.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    }
-                ]
-            },
-            {
-                "fashion": {
-                    "ID": 15397,
-                    "post_author": "48",
-                    "post_date": "2021-03-10 13:43:57",
-                    "post_date_gmt": "2021-03-10 18:43:57",
-                    "post_content": "",
-                    "post_title": "Eclipse",
-                    "post_excerpt": "",
-                    "post_status": "publish",
-                    "comment_status": "closed",
-                    "ping_status": "closed",
-                    "post_password": "",
-                    "post_name": "eclipse-2",
-                    "to_ping": "",
-                    "pinged": "",
-                    "post_modified": "2021-03-10 13:43:57",
-                    "post_modified_gmt": "2021-03-10 18:43:57",
-                    "post_content_filtered": "",
-                    "post_parent": 0,
-                    "guid": "https://www.joiebaby.dev/?post_type=fashion&#038;p=15397",
-                    "menu_order": 0,
-                    "post_type": "fashion",
-                    "post_mime_type": "",
-                    "comment_count": "0",
-                    "filter": "raw"
-                },
-                "mpn_code": "",
-                "fashion_images": [{
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/ECLIPSE_Gallery_ProductImage_1-1.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/ECLIPSE_Gallery_ProductImage_2-1.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/ECLIPSE_Gallery_ProductImage_3-1.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/ECLIPSE_Gallery_ProductImage_4-1.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/ECLIPSE_Gallery_ProductImage_5-1.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/ECLIPSE_Gallery_ProductImage_6-1.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/ECLIPSE_Gallery_ProductImage_8.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/ECLIPSE_Gallery_ProductImage_9.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/ECLIPSE_Gallery_ProductImage_10.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    }
-                ]
-            },
-            {
-                "fashion": {
-                    "ID": 15395,
-                    "post_author": "48",
-                    "post_date": "2021-03-10 13:43:28",
-                    "post_date_gmt": "2021-03-10 18:43:28",
-                    "post_content": "",
-                    "post_title": "Harbour",
-                    "post_excerpt": "",
-                    "post_status": "publish",
-                    "comment_status": "closed",
-                    "ping_status": "closed",
-                    "post_password": "",
-                    "post_name": "harbour",
-                    "to_ping": "",
-                    "pinged": "",
-                    "post_modified": "2021-03-10 13:43:28",
-                    "post_modified_gmt": "2021-03-10 18:43:28",
-                    "post_content_filtered": "",
-                    "post_parent": 0,
-                    "guid": "https://www.joiebaby.dev/?post_type=fashion&#038;p=15395",
-                    "menu_order": 0,
-                    "post_type": "fashion",
-                    "post_mime_type": "",
-                    "comment_count": "0",
-                    "filter": "raw"
-                },
-                "mpn_code": "",
-                "fashion_images": [{
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/HARBOUR_Gallery_ProductImage_1.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/HARBOUR_Gallery_ProductImage_2.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/HARBOUR_Gallery_ProductImage_3.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/HARBOUR_Gallery_ProductImage_4.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/HARBOUR_Gallery_ProductImage_5.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/HARBOUR_Gallery_ProductImage_6.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/HARBOUR_Gallery_ProductImage_8.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/HARBOUR_Gallery_ProductImage_9.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/HARBOUR_Gallery_ProductImage_10.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    }
-                ]
-            },
-            {
-                "fashion": {
-                    "ID": 15399,
-                    "post_author": "48",
-                    "post_date": "2021-03-10 13:44:35",
-                    "post_date_gmt": "2021-03-10 18:44:35",
-                    "post_content": "",
-                    "post_title": "Cider",
-                    "post_excerpt": "",
-                    "post_status": "publish",
-                    "comment_status": "closed",
-                    "ping_status": "closed",
-                    "post_password": "",
-                    "post_name": "cider",
-                    "to_ping": "",
-                    "pinged": "",
-                    "post_modified": "2021-03-10 13:44:35",
-                    "post_modified_gmt": "2021-03-10 18:44:35",
-                    "post_content_filtered": "",
-                    "post_parent": 0,
-                    "guid": "https://www.joiebaby.dev/?post_type=fashion&#038;p=15399",
-                    "menu_order": 0,
-                    "post_type": "fashion",
-                    "post_mime_type": "",
-                    "comment_count": "0",
-                    "filter": "raw"
-                },
-                "mpn_code": "",
-                "fashion_images": [{
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/CIDER_Gallery_ProductImage_1.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/CIDER_Gallery_ProductImage_2.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/CIDER_Gallery_ProductImage_3.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/CIDER_Gallery_ProductImage_4.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/CIDER_Gallery_ProductImage_5.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/CIDER_Gallery_ProductImage_6.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/CIDER_Gallery_ProductImage_8.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/CIDER_Gallery_ProductImage_9.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    },
-                    {
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/CIDER_Gallery_ProductImage_10.jpg",
-                        "this_is_a_video": false,
-                        "video_url": ""
-                    }
-                ]
-            },
-            {
-                "fashion": {
-                    "ID": 15391,
-                    "post_author": "48",
-                    "post_date": "2021-03-10 13:42:30",
-                    "post_date_gmt": "2021-03-10 18:42:30",
-                    "post_content": "",
-                    "post_title": "Pine",
-                    "post_excerpt": "",
-                    "post_status": "publish",
-                    "comment_status": "closed",
-                    "ping_status": "closed",
-                    "post_password": "",
-                    "post_name": "pine",
-                    "to_ping": "",
-                    "pinged": "",
-                    "post_modified": "2021-03-10 13:42:30",
-                    "post_modified_gmt": "2021-03-10 18:42:30",
-                    "post_content_filtered": "",
-                    "post_parent": 0,
-                    "guid": "https://www.joiebaby.dev/?post_type=fashion&#038;p=15391",
-                    "menu_order": 0,
-                    "post_type": "fashion",
-                    "post_mime_type": "",
-                    "comment_count": "0",
-                    "filter": "raw"
-                },
-                "mpn_code": "",
-                "fashion_images": [{
-                    "image": "https://www.joiebaby.dev/wp-content/uploads/2021/03/PINE_Gallery_ProductImage_1-1.jpg",
-                    "this_is_a_video": false,
-                    "video_url": ""
-                }]
-            }
-        ],
-        "weight": null,
-        "dimensions": {
-            "Open": {
-                "height:": "00 cm",
-                "width:": "00 cm",
-                "length": "00 cm"
-            },
-            "Folded:": {
-                "height:": "00 cm",
-                "width:": "00 cm",
-                "lenght:": "00 cm"
-            }
-        },
-        "wheel_size": null,
-        "max_child_weight": null,
-        "infant_seats": null,
-        "carry_cots": null,
-        "flex_comfort_seat": null,
-        "height_adjust_seat": null,
-        "reversible_seat": null,
-        "one_hand_fold": null,
-        "armbar": null,
-        "recline_positions": null
+        "recline_positions": "2"
     },
     {
         "product_id": 15274,
@@ -713,7 +400,7 @@
                         "price_local": "£299.99",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?utm_campaign=Joie&utm_source=hatch&merch_id=94149&region=GB&affiliate_id=52993&prod_id=651608163&core_id=95492181",
                         "retailer_id": "5e8b02f64902a900015e71b7",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -734,7 +421,7 @@
                         "price_local": "£300.00",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=91391&region=GB&affiliate_id=52993&prod_id=611559493&core_id=95492181",
                         "retailer_id": "5a8d94df46e0fb00013d85b8",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -755,7 +442,7 @@
                         "price_local": "£300.00",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=88977&region=GB&affiliate_id=52993&prod_id=1161511871&core_id=95492181",
                         "retailer_id": "5a2530cf46e0fb0001b6a092",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -776,7 +463,7 @@
                         "price_local": "£300.00",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?utm_campaign=Joie&utm_source=hatch&merch_id=94497&region=GB&affiliate_id=52993&prod_id=1106795251&core_id=95492181",
                         "retailer_id": "5ea81d6b5b9fc500013b039f",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -797,7 +484,7 @@
                         "price_local": "£300.00",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=89413&region=GB&affiliate_id=52993&prod_id=1109173073&core_id=95492181",
                         "retailer_id": "5ced203546e0fb0001f6a433",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -818,7 +505,7 @@
                         "price_local": "£299.99",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?utm_campaign=Joie&utm_source=hatch&merch_id=94003&region=GB&affiliate_id=52993&prod_id=611377905&core_id=95492181",
                         "retailer_id": "5e81c48b4902a900015f38ef",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -839,7 +526,7 @@
                         "price_local": "£299.99",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=7788&region=GB&affiliate_id=52993&prod_id=544267271&core_id=95492181",
                         "retailer_id": "5a25301b46e0fb0001b69cda",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -864,7 +551,7 @@
                         "price_local": "£299.99",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?utm_campaign=Joie&utm_source=hatch&merch_id=94149&region=GB&affiliate_id=52993&prod_id=651608167&core_id=95492185",
                         "retailer_id": "5e8b02f64902a900015e71b7",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -885,7 +572,7 @@
                         "price_local": "£300.00",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=88977&region=GB&affiliate_id=52993&prod_id=1159614563&core_id=95492185",
                         "retailer_id": "5a2530cf46e0fb0001b6a092",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -906,32 +593,11 @@
                         "price_local": "£300.00",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?utm_campaign=Joie&utm_source=hatch&merch_id=94497&region=GB&affiliate_id=52993&prod_id=1128915967&core_id=95492185",
                         "retailer_id": "5ea81d6b5b9fc500013b039f",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
                         "suggested_sorting": 3
-                    },
-                    {
-                        "partner_details": "",
-                        "currency": "GBP",
-                        "currencySymbol": "&#163;",
-                        "group": "2",
-                        "logo": "https://gethatch.com/resources/images/merchant/mLogo94003.png",
-                        "market_focus": "",
-                        "id": 94003,
-                        "name": "Pushchairexpert",
-                        "partner": "",
-                        "tracking": true,
-                        "price": "400.00",
-                        "price_local": "£400.00",
-                        "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?utm_campaign=Joie&utm_source=hatch&merch_id=94003&region=GB&affiliate_id=52993&prod_id=611377909&core_id=95492185",
-                        "retailer_id": "5e81c48b4902a900015f38ef",
-                        "source_date": "2021-06-07",
-                        "stock_info": true,
-                        "stock_qty": 1,
-                        "subtags": "",
-                        "suggested_sorting": 4
                     },
                     {
                         "partner_details": "",
@@ -948,11 +614,11 @@
                         "price_local": "£299.00",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=91391&region=GB&affiliate_id=52993&prod_id=611559559&core_id=95492185",
                         "retailer_id": "5a8d94df46e0fb00013d85b8",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": false,
                         "stock_qty": 0,
                         "subtags": "",
-                        "suggested_sorting": 5
+                        "suggested_sorting": 4
                     },
                     {
                         "partner_details": "",
@@ -969,7 +635,28 @@
                         "price_local": "£300.00",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=89413&region=GB&affiliate_id=52993&prod_id=1123228431&core_id=95492185",
                         "retailer_id": "5ced203546e0fb0001f6a433",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
+                        "stock_info": false,
+                        "stock_qty": 0,
+                        "subtags": "",
+                        "suggested_sorting": 5
+                    },
+                    {
+                        "partner_details": "",
+                        "currency": "GBP",
+                        "currencySymbol": "&#163;",
+                        "group": "2",
+                        "logo": "https://gethatch.com/resources/images/merchant/mLogo94003.png",
+                        "market_focus": "",
+                        "id": 94003,
+                        "name": "Pushchairexpert",
+                        "partner": "",
+                        "tracking": true,
+                        "price": "400.00",
+                        "price_local": "£400.00",
+                        "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?utm_campaign=Joie&utm_source=hatch&merch_id=94003&region=GB&affiliate_id=52993&prod_id=611377909&core_id=95492185",
+                        "retailer_id": "5e81c48b4902a900015f38ef",
+                        "source_date": "2021-06-08",
                         "stock_info": false,
                         "stock_qty": 0,
                         "subtags": "",
@@ -994,7 +681,7 @@
                         "price_local": "£299.99",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?utm_campaign=Joie&utm_source=hatch&merch_id=94149&region=GB&affiliate_id=52993&prod_id=651608165&core_id=95492183",
                         "retailer_id": "5e8b02f64902a900015e71b7",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -1015,7 +702,7 @@
                         "price_local": "£300.00",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=88977&region=GB&affiliate_id=52993&prod_id=1159614561&core_id=95492183",
                         "retailer_id": "5a2530cf46e0fb0001b6a092",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -1036,7 +723,7 @@
                         "price_local": "£300.00",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?utm_campaign=Joie&utm_source=hatch&merch_id=94497&region=GB&affiliate_id=52993&prod_id=1092527271&core_id=95492183",
                         "retailer_id": "5ea81d6b5b9fc500013b039f",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -1057,7 +744,7 @@
                         "price_local": "£379.99",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=55319&region=GB&affiliate_id=52993&prod_id=1118001113&core_id=95492183",
                         "retailer_id": "5a25341646e0fb0001b6b546",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -1078,7 +765,7 @@
                         "price_local": "£300.00",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?utm_campaign=Joie&utm_source=hatch&merch_id=94003&region=GB&affiliate_id=52993&prod_id=611377907&core_id=95492183",
                         "retailer_id": "5e81c48b4902a900015f38ef",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -1099,7 +786,7 @@
                         "price_local": "£299.99",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=55321&region=GB&affiliate_id=52993&prod_id=1117200579&core_id=95492183",
                         "retailer_id": "5a2536a346e0fb0001b6c986",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -1120,7 +807,7 @@
                         "price_local": "£300.00",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=90153&region=GB&affiliate_id=52993&prod_id=1089263669&core_id=95492183",
                         "retailer_id": "5a2532dd46e0fb0001b6acf6",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -1141,7 +828,7 @@
                         "price_local": "£300.00",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=33271&region=GB&affiliate_id=52993&prod_id=1166521357&core_id=95492183",
                         "retailer_id": "5a25337b46e0fb0001b6b106",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": true,
                         "stock_qty": 1,
                         "subtags": "",
@@ -1162,7 +849,7 @@
                         "price_local": "£300.00",
                         "purchase_link": "https://gethatch.com/iceleads_tracking/inbetween.xhtml?merch_id=91391&region=GB&affiliate_id=52993&prod_id=611559613&core_id=95492183",
                         "retailer_id": "5a8d94df46e0fb00013d85b8",
-                        "source_date": "2021-06-07",
+                        "source_date": "2021-06-08",
                         "stock_info": false,
                         "stock_qty": 0,
                         "subtags": "",
@@ -1510,15 +1197,15 @@
         ],
         "weight": "",
         "dimensions": {
-            "Open": {
-                "height:": "00 cm",
-                "width:": "00 cm",
+            "open": {
+                "height": "00 cm",
+                "width": "00 cm",
                 "length": "00 cm"
             },
-            "Folded:": {
-                "height:": "00 cm",
-                "width:": "00 cm",
-                "lenght:": "00 cm"
+            "folded": {
+                "height": "00 cm",
+                "width": "00 cm",
+                "length": "00 cm"
             }
         },
         "wheel_size": "",
