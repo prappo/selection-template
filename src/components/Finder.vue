@@ -7,7 +7,7 @@
         <h1 v-if="!pageTitle" class="text-joie_text header-text">
           Please Wait..
         </h1>
-        <h2 class="header-subtitle text-joie_text-light">
+        <h2 class="text-joie_text-light hs">
           {{ pageSubtitle }}
         </h2>
       </div>
@@ -16,10 +16,10 @@
         :style="{ backgroundImage: 'url(' + bannerUrl + ')' }"
       ></div>
       <div class="container mx-auto">
-        <h1 class="text-joie_text header-text text-center my-5 mx-5">
+        <h1 class="text-joie_text header-text text-center mt-5 mx-5">
           {{ underBannerTitle }}
         </h1>
-        <h2 class="header-subtitle text-joie_text-light italic text-center">
+        <h2 class="hs header-subtitle text-joie_text-light italic text-center">
           {{ underBannerSubtitle }}
         </h2>
       </div>
@@ -90,8 +90,8 @@
 
     <!-- Next level start -->
     <div class="">
-      <div class="flex flex-col h-full" v-if="nextLevel">
-        <div class="container mx-auto my-10 flex gap-2 items-start">
+      <div class="flex flex-col h-full reversible-row" v-if="nextLevel">
+        <div id="newSearch" class="container mx-auto my-10 flex gap-2 items-start">
           <div class="text-joie_text header-subtitle">&#60;</div>
           <a
             @click="changeLevel('first')"
@@ -100,6 +100,7 @@
             >{{ startNewSearchText }}</a
           >
         </div>
+        <div class="">
         <div class="text-center my-5">
           <h1 class="text-joie_text header-text">{{ currentTitle }}</h1>
           <h2 class="header-subtitle text-joie_text-light">
@@ -168,6 +169,7 @@
             </div>
             <img class="w-20" :src="r.image" />
           </div>
+        </div>
         </div>
       </div>
     </div>

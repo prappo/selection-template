@@ -5,10 +5,7 @@
 </template>
 
 <script setup>
-import Header from "./components/Header.vue";
-import Hero from "./components/Hero.vue";
 import Finder from "./components/Finder.vue";
-import Footer from "./components/Footer.vue";
 </script>
 
 <style>
@@ -68,9 +65,18 @@ import Footer from "./components/Footer.vue";
   height: 430px;
 }
 
+.hs {
+  font-size: 17px;
+  font-family: "Gotham Rounded", sans-serif;
+  font-weight: 300;
+  color: #808285;
+}
 @media (min-width: 320px) and (max-width: 480px) {
   /* mobile */
-
+  #newSearch {
+    display: flex;
+    justify-content: center;
+  }
   .selected-item-name {
     flex-grow: 1;
   }
@@ -113,12 +119,17 @@ import Footer from "./components/Footer.vue";
   }
 
   .header-subtitle {
-    display: none;
+    /* display: none; */
   }
 
   .reversible-section {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .reversible-row {
+    display: flex;
+    flex-direction:column-reverse !important;
   }
 
   .description {
