@@ -1,12 +1,6 @@
 <template>
   <div class="container mx-auto">
-    <!-- <div
-      class="w-full text-center header-text text-joie_text"
-      v-if="finalData == null"
-    >
-      sorry no data available
-    </div> -->
-
+    
     <div class="" v-if="finalData">
       <div class="">
         <div

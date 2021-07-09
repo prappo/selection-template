@@ -21,7 +21,7 @@ import Finder from "./components/Finder.vue";
 }
 .joie-font {
   /* font-family: "GothamRounded-Medium"; */
-  font-family: "Gotham Rounded", sans-serif;
+  font-family: "Gotham Rounded Medium", sans-serif;
 }
 /* p,a{
   font-weight: 400;
@@ -31,11 +31,13 @@ import Finder from "./components/Finder.vue";
 }
 .header-text {
   font-size: 49px;
-  font-family: "Gotham Rounded", sans-serif;
+  font-family: "Gotham Rounded Medium", sans-serif;
 }
 .header-subtitle {
   font-size: 27px;
+  color: #808285;
   font-family: "Gotham Rounded", sans-serif;
+  
   font-weight: thin;
 }
 
@@ -47,7 +49,7 @@ import Finder from "./components/Finder.vue";
 }
 
 .stroller-image {
-  filter: opacity(0.6);
+  filter: opacity(0.4);
 }
 
 .stroller-image:hover {
@@ -55,9 +57,10 @@ import Finder from "./components/Finder.vue";
 }
 
 .description {
-  font-size: 23px;
+  font-size: 18px;
   font-family: "Gotham Rounded", sans-serif;
   font-weight: 100;
+  color: #808285
 }
 
 .stroller-box {
@@ -66,9 +69,9 @@ import Finder from "./components/Finder.vue";
 }
 
 .hs {
-  font-size: 17px;
-  font-family: "Gotham Rounded", sans-serif;
-  font-weight: 300;
+  font-size: 20px;
+  font-family: "Gotham Rounded Light", sans-serif;
+  font-weight: lighter;
   color: #808285;
 }
 @media (min-width: 320px) and (max-width: 480px) {

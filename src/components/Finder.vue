@@ -39,6 +39,7 @@
               @click="changeLevel('next', stroller)"
               v-for="stroller in strollers"
               :key="stroller.id"
+              style="transform: scale(0.75)"
               class="
                 flex
                 joie-font
@@ -266,14 +267,7 @@ export default {
       this.currentSubtitle = "";
       this.resultPage = true;
 
-      // let cats = [];
-
-      // for (const key in this.finalData) {
-      //   console.log(this.finalData[key]);
-      //   cats.push(this.finalData[key]);
-      // }
-
-      // const categories = cats.toString();
+      
 
       this.fetchResults({
         param: term_id,
