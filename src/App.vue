@@ -9,8 +9,11 @@ import Finder from "./components/Finder.vue";
 </script>
 
 <style>
+/* *{
+  font-family: "Gotham Rounded Italic", sans-serif;
+} */
 #app {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .border-2 {
@@ -65,7 +68,7 @@ import Finder from "./components/Finder.vue";
 
 .stroller-box {
   width: 300px;
-  height: 430px;
+  height: 300px;
 }
 
 .hs {
@@ -84,7 +87,7 @@ import Finder from "./components/Finder.vue";
     flex-grow: 1;
   }
   .selected-items {
-    background-color: white !important;
+    /* background-color: white !important; */
     padding: 10px !important;
   }
   .header-text {
@@ -117,8 +120,15 @@ import Finder from "./components/Finder.vue";
   }
 
   .grid {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0px;
+    margin: 0px;
+    gap: 0px !important;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+  }
+
+  .grid > label {
+    transform: scale(0.85) !important
   }
 
   .header-subtitle {
@@ -126,8 +136,8 @@ import Finder from "./components/Finder.vue";
   }
 
   .reversible-section {
-    display: flex;
-    flex-direction: column-reverse;
+    /* display: flex;
+    flex-direction: column-reverse; */
   }
 
   .reversible-row {

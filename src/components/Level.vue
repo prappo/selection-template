@@ -9,7 +9,7 @@
           <div style="padding-left:10px; padding-right:10px" v-for="stroller in finalData" :key="stroller.id">
             <label
               
-              class="flex px-5 stroller-box text-center cursor-pointer  md:space-x-0 justify-between flex-row-reverse md:flex-col md:justify-items-center items-center md:py-20 border-2 border-joie_text_light hover:border-joie_text_dark"
+              class="flex px-5 stroller-box text-center cursor-pointer  md:space-x-0  flex-row-reverse md:flex-col md:justify-items-center items-center  border-2 border-joie_text_light hover:border-joie_text_dark"
             >
               <img class="w-40 stroller-image" :src="stroller.image" />
               <div class="stroller-text-section">
@@ -18,7 +18,7 @@
                   font-size: 19px;
                   font-weight: 600;
                   font-family: 'GothamRounded-Medium';
-                  padding: 20px 20px 10px 20px;
+                  
                 "
                 class="text-joie_text_dark mx-10 stroller-name joie-font"
               >
