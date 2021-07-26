@@ -3,7 +3,7 @@
     <th style="background: white !important">
       <img :src="product.product_image" />
       <div class="w-32 spacer"></div>
-      <div class="py-5 product-name" v-html="product.product_name"></div>
+      <div style="font-family: 'Gotham Rounded Medium', sans-serif" class="py-5 product-name" v-html="product.product_name"></div>
     </th>
     <td>
       <div class="w-40 px-2 py-2" v-html="product.product_description">

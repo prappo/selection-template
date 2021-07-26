@@ -52,7 +52,7 @@
                 style="
                   font-size: 19px;
                   font-weight: 600;
-                  font-family: 'GothamRounded-Medium';
+                  font-family: 'Gotham Rounded Medium';
                 "
                 class="text-joie_text_dark joie-font"
               >
@@ -171,7 +171,7 @@
                 style="
                   font-size: 19px;
                   font-weight: 600;
-                  font-family: 'GothamRounded-Medium';
+                  font-family: 'Gotham Rounded Medium';
                 "
                 class="text-joie_text_dark selected-item-name"
               >

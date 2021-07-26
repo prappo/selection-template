@@ -6,7 +6,7 @@
       <table class="text-joie_text">
         
         <thead>
-          <tr>
+          <tr style="font-family: 'Gotham Rounded Medium', sans-serif">
             <th></th>
             <th>description</th>
             <th>colors</th>
@@ -18,13 +18,13 @@
             <th>
               <div class="flex flex-col">
                 <div class="nowrap">infant seats</div>
-                <div class="text-sm font-thin">compatible</div>
+                <div style="font-family: 'Gotham Rounded', sans-serif" class="text-sm font-thin">compatible</div>
               </div>
             </th>
             <th>
               <div>
                 <div>carry cots</div>
-                <div class="font-thin">compatible</div>
+                <div style="font-family: 'Gotham Rounded', sans-serif" class="font-thin">compatible</div>
               </div>
             </th>
             <th>flex comfort seat</th>
