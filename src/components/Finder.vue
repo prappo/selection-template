@@ -2,15 +2,7 @@
   <div>
     <!-- First level start -->
     <div v-show="firstLevel">
-      <div class="text-center my-5">
-        <h1 class="text-joie_text header-text">{{ pageTitle }}</h1>
-        <h1 v-if="!pageTitle" class="text-joie_text header-text">
-          Please Wait..
-        </h1>
-        <h2 class="text-joie_text-light hs">
-          {{ pageSubtitle }}
-        </h2>
-      </div>
+     
       
       <div class="container mx-auto">
         <h1 class="text-joie_text header-text text-center mt-5 mx-5">
@@ -96,16 +88,16 @@
       <div class="flex flex-col h-full reversible-row" v-if="nextLevel">
         <div
           id="newSearch"
-          class="container mx-auto my-10 flex gap-2 items-start"
+          class="container mx-auto mt-20 flex gap-2 items-center"
         >
-          <div class="text-joie_text header-subtitle">&#60;</div>
+          <div style="font-size:18px;" class="text-joie_text header-subtitle">&#60;</div>
           <a
             @click="changeLevel('first')"
             style="
               
-              font-family: 'Gotham Rounded', sans-serif;
-              font-size:20px;
-              font-weight: 900;
+              font-family: 'Gotham Rounded Medium', sans-serif;
+              font-size:18px;
+             
             "
             class="text-joie_text underline"
             href="#"
@@ -117,12 +109,10 @@
             <h1 class="text-joie_text header-text">{{ currentTitle }}</h1>
             <h2
               style="
-                font-size: 20px;
-                color: #808285;
-                font-family: 'Gotham Rounded', sans-serif;
-                font-weight:900;
+                
+              
               "
-              class="text-joie_text-light italic"
+              class="text-joie_text-light italic hs"
             >
               {{ currentSubtitle }}
             </h2>
@@ -153,14 +143,14 @@
               md:grid-cols-4
               sm:grid-flow-row
               items-center
-              
+              gap-5
               px-20
               selected-items
             "
             v-if="finalData"
           >
             <div
-              class="flex items-center gap-2"
+              class="grid selected-item grid-flow-col items-center gap-2 justify-center"
               v-for="r in finalData"
               :key="r.id"
             >

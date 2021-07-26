@@ -71,6 +71,10 @@ import Finder from "./components/Finder.vue";
   height: 300px;
 }
 
+.selected-item > div {
+
+}
+
 .hs {
   font-size: 20px;
   font-family: "Gotham Rounded Light", sans-serif;
@@ -79,6 +83,12 @@ import Finder from "./components/Finder.vue";
 }
 @media (min-width: 320px) and (max-width: 480px) {
   /* mobile */
+  .selected-item{
+    display: flex !important;
+  }
+  .selected-item > svg {
+    margin-right: 10px;
+  }
   #newSearch {
     display: flex;
     justify-content: center;
