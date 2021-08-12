@@ -11,12 +11,11 @@
               
               class="flex px-5 stroller-box text-center cursor-pointer  md:space-x-0  flex-row-reverse md:flex-col md:justify-items-center items-center  border-2 border-joie_text_light hover:border-joie_text_dark"
             >
-              <img style="margin-top:15px" class="w-40 stroller-image" :src="stroller.image" />
+              <img class="w-40 sub-stroller-image stroller-image" :src="stroller.image" />
               <div class="stroller-text-section">
               <div
                 style="
-                  font-size: 19px;
-                  font-weight: 600;
+                 
                   font-family: 'Gotham Rounded Medium';
                   
                 "

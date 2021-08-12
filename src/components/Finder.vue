@@ -50,9 +50,9 @@
               <img class="w-40 stroller-image" :src="stroller.image" />
               <div
                 style="
-                  font-size: 19px;
-                  font-weight: 600;
+                 
                   font-family: 'Gotham Rounded Medium';
+                  transform: scale(1.35)
                 "
                 class="text-joie_text_dark joie-font"
               >
@@ -95,8 +95,9 @@
             @click="changeLevel('first')"
             style="
               
-              font-family: 'Gotham Rounded Medium', sans-serif;
+              font-family: 'Gotham Rounded', sans-serif;
               font-size:18px;
+              font-weight: 100;
              
             "
             class="text-joie_text underline"
@@ -170,7 +171,6 @@
               <div
                 style="
                   font-size: 19px;
-                  font-weight: 600;
                   font-family: 'Gotham Rounded Medium';
                 "
                 class="text-joie_text_dark selected-item-name"

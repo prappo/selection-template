@@ -45,6 +45,7 @@
 </template>
 
 <style scoped>
+
 table {
   /* font-family: "GothamRounded-Medium"; */
   font-family: "Gotham Rounded", sans-serif;

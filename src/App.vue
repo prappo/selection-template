@@ -13,7 +13,7 @@ import Finder from "./components/Finder.vue";
   font-family: "Gotham Rounded Italic", sans-serif;
 } */
 #app {
-  padding-top: 80px;
+  padding-top: 130px;
 }
 
 .border-2 {
@@ -40,7 +40,7 @@ import Finder from "./components/Finder.vue";
   font-size: 27px;
   color: #808285;
   font-family: "Gotham Rounded", sans-serif;
-  
+
   font-weight: thin;
 }
 
@@ -63,7 +63,7 @@ import Finder from "./components/Finder.vue";
   font-size: 18px;
   font-family: "Gotham Rounded", sans-serif;
   font-weight: 100;
-  color: #808285
+  color: #808285;
 }
 
 .stroller-box {
@@ -72,18 +72,30 @@ import Finder from "./components/Finder.vue";
 }
 
 .selected-item > div {
-
 }
 
+.stroller-image{
+    transform: scale(0.75);
+  }
 .hs {
   font-size: 20px;
   font-family: "Gotham Rounded Light", sans-serif;
   font-weight: lighter;
   color: #808285;
 }
+
+.sub-stroller-image {
+  margin-top: 15px;
+}
 @media (min-width: 320px) and (max-width: 480px) {
   /* mobile */
-  .selected-item{
+
+  
+
+  .sub-stroller-image {
+    margin-top: 0px;
+  }
+  .selected-item {
     display: flex !important;
   }
   .selected-item > svg {
@@ -138,7 +150,7 @@ import Finder from "./components/Finder.vue";
   }
 
   .grid > label {
-    transform: scale(0.85) !important
+    transform: scale(0.85) !important;
   }
 
   .header-subtitle {
@@ -152,7 +164,7 @@ import Finder from "./components/Finder.vue";
 
   .reversible-row {
     display: flex;
-    flex-direction:column-reverse !important;
+    flex-direction: column-reverse !important;
   }
 
   .description {
