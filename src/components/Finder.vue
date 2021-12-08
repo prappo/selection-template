@@ -2,8 +2,6 @@
   <div>
     <!-- First level start -->
     <div v-show="firstLevel">
-     
-      
       <div class="container mx-auto">
         <h1 class="text-joie_text header-text text-center mt-5 mx-5">
           {{ underBannerTitle }}
@@ -38,8 +36,7 @@
                 md:space-x-0
                 justify-between
                 flex-row-reverse
-                md:flex-col
-                md:justify-items-center
+                md:flex-col md:justify-items-center
                 items-center
                 md:py-20
                 border-2
@@ -50,9 +47,8 @@
               <img class="w-40 stroller-image" :src="stroller.image" />
               <div
                 style="
-                 
                   font-family: 'Gotham Rounded Medium';
-                  transform: scale(1.35)
+                  transform: scale(1.35);
                 "
                 class="text-joie_text_dark joie-font"
               >
@@ -76,9 +72,9 @@
         </div>
 
         <div
-        class="banner-image bg-scroll"
-        :style="{ backgroundImage: 'url(' + bannerUrl + ')' }"
-      ></div>
+          class="banner-image bg-scroll"
+          :style="{ backgroundImage: 'url(' + bannerUrl + ')' }"
+        ></div>
       </div>
     </div>
     <!-- First level end -->
@@ -90,15 +86,15 @@
           id="newSearch"
           class="container mx-auto mt-20 flex gap-2 items-center"
         >
-          <div style="font-size:18px;" class="text-joie_text header-subtitle">&#60;</div>
+          <div style="font-size: 18px" class="text-joie_text header-subtitle">
+            &#60;
+          </div>
           <a
             @click="changeLevel('first')"
             style="
-              
               font-family: 'Gotham Rounded', sans-serif;
-              font-size:18px;
+              font-size: 18px;
               font-weight: 100;
-             
             "
             class="text-joie_text underline"
             href="#"
@@ -108,13 +104,7 @@
         <div class="">
           <div class="text-center my-5">
             <h1 class="text-joie_text header-text">{{ currentTitle }}</h1>
-            <h2
-              style="
-                
-              
-              "
-              class="text-joie_text-light italic hs"
-            >
+            <h2 style="" class="text-joie_text-light italic hs">
               {{ currentSubtitle }}
             </h2>
           </div>
@@ -151,7 +141,14 @@
             v-if="finalData"
           >
             <div
-              class="grid selected-item grid-flow-col items-center gap-2 justify-center"
+              class="
+                grid
+                selected-item
+                grid-flow-col
+                items-center
+                gap-2
+                justify-center
+              "
               v-for="r in finalData"
               :key="r.id"
             >
@@ -169,10 +166,7 @@
                 />
               </svg>
               <div
-                style="
-                  font-size: 19px;
-                  font-family: 'Gotham Rounded Medium';
-                "
+                style="font-size: 19px; font-family: 'Gotham Rounded Medium'"
                 class="text-joie_text_dark selected-item-name"
               >
                 {{ r.name }}
@@ -229,6 +223,15 @@ export default {
       settingsURL: document
         .getElementById("app")
         .getAttribute("data-settings-url"),
+      sorryMessage: document
+        .getElementById("app")
+        .getAttribute("data-message-sorry"),
+      wrongMessage: document
+        .getElementById("app")
+        .getAttribute("data-message-wrong"),
+      foundMessage: document
+        .getElementById("app")
+        .getAttribute("data-message-found"),
       levelID: 1,
       currentTitle: "",
       currentSubtitle: "",
@@ -271,8 +274,10 @@ export default {
 
       // alert("Now result will show")
 
-      this.currentTitle = "we have 2 perfect strollers!";
-      this.currentTitle = "Please Wait...";
+      this.currentTitle = this.foundMessage;
+      this.currentTitle = document
+        .getElementById("app")
+        .getAttribute("data-wait-message");
       this.currentSubtitle = "";
       this.resultPage = true;
 
@@ -340,21 +345,29 @@ export default {
         this.finalData = [];
       }
     },
+
+    sortCategory(results) {
+      results.sort(function (a, b) {
+        return a.term_order - b.term_order || a.name.localeCompare(b.name);
+      });
+      console.log(results);
+      return results;
+    },
     async fetchData() {
       try {
         const url = this.restURL;
         const response = await axios.get(url);
         const results = response.data;
-        this.strollers = results;
+        this.strollers = this.sortCategory(results);
         // console.log(this.strollers);
       } catch (err) {
         if (err.response) {
           // client received an error response (5xx, 4xx)
-          this.waitMessage = "Something went wrong";
+          this.waitMessage = this.wrongMessage;
           console.log("Server Error:", err);
         } else if (err.request) {
           // client never received a response, or request never left
-          this.waitMessage = "Something went wrong";
+          this.waitMessage = this.wrongMessage;
           console.log("Network Error:", err);
         } else {
           console.log("Client Error:", err);
@@ -372,7 +385,7 @@ export default {
         let plural = "s";
 
         if (results.length == 0) {
-          this.currentTitle = "Sorry We did not find any stroller";
+          this.currentTitle = this.sorryMessage;
           this.searachResults = null;
           return;
         }
@@ -380,7 +393,12 @@ export default {
         if (results.length <= 1) {
           plural = "";
         }
-        this.currentTitle = `we have ${results.length} perfect stroller${plural}!`;
+        // foundMessage
+        // this.currentTitle = `we have ${results.length} perfect stroller${plural}!`;
+        this.currentTitle = this.foundMessage.replace(
+          "{number}",
+          results.length
+        );
         // console.log(this.strollers);
       } catch (err) {
         if (err.response) {

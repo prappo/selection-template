@@ -8,5 +8,8 @@ export default defineConfig({
         manifest: true,
 
     },
-    plugins: [vue()]
+    plugins: [vue()],
+    server: {
+        host: '192.168.0.117'
+      }
 })

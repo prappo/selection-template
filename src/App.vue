@@ -91,7 +91,10 @@ import Finder from "./components/Finder.vue";
   /* mobile */
 
   
-
+  .hs{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   .sub-stroller-image {
     margin-top: 0px;
   }

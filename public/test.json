@@ -1,1010 +1,1031 @@
-[{
-        "term_id": 261,
-        "name": "double",
-        "slug": "double",
-        "term_group": 0,
-        "term_taxonomy_id": 261,
-        "taxonomy": "stroller_category",
-        "description": "",
-        "parent": 0,
-        "count": 0,
-        "filter": "raw",
-        "term_order": "0",
-        "children": [
-
-        ],
-        "id": 261,
-        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/double_periwinkle.png",
-        "title": "",
-        "subtitle": "please choose one",
-        "data": null
+[
+    {
+      "term_id": 261,
+      "name": "double",
+      "slug": "double",
+      "term_group": 0,
+      "term_taxonomy_id": 261,
+      "taxonomy": "stroller_category",
+      "description": "",
+      "parent": 0,
+      "count": 2,
+      "filter": "raw",
+      "term_order": "2",
+      "children": [
+        
+      ],
+      "id": 261,
+      "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/double_periwinkle.png",
+      "title": "",
+      "subtitle": "please choose one",
+      "data": null
     },
     {
-        "term_id": 259,
-        "name": "pram",
-        "slug": "pram",
-        "term_group": 0,
-        "term_taxonomy_id": 259,
-        "taxonomy": "stroller_category",
-        "description": "",
-        "parent": 0,
-        "count": 0,
-        "filter": "raw",
-        "term_order": "0",
-        "children": [{
-                "term_id": 263,
-                "name": "air wheels",
-                "slug": "air-wheels",
-                "term_group": 0,
-                "term_taxonomy_id": 263,
-                "taxonomy": "stroller_category",
-                "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                "parent": 259,
-                "count": 0,
-                "filter": "raw",
-                "term_order": "0",
-                "children": [
-
-                ],
-                "id": 263,
-                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/air_wheels_periwinkle.png",
-                "title": "Some title",
-                "subtitle": "please choose one",
-                "data": null
-            },
-            {
-                "term_id": 262,
-                "name": "EVA wheels",
-                "slug": "eva-wheels",
-                "term_group": 0,
-                "term_taxonomy_id": 262,
-                "taxonomy": "stroller_category",
-                "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                "parent": 259,
-                "count": 0,
-                "filter": "raw",
-                "term_order": "0",
-                "children": [
-
-                ],
-                "id": 262,
-                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/eva_wheels_periwinkle.png",
-                "title": "Some title",
-                "subtitle": "please choose one",
-                "data": null
-            },
-            {
-                "term_id": 264,
-                "name": "foam filled wheels",
-                "slug": "foam-filled-wheels",
-                "term_group": 0,
-                "term_taxonomy_id": 264,
-                "taxonomy": "stroller_category",
-                "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                "parent": 259,
-                "count": 0,
-                "filter": "raw",
-                "term_order": "0",
-                "children": [
-
-                ],
-                "id": 264,
-                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/foam_wheels_periwinkle.png",
-                "title": "Some titlex`",
-                "subtitle": "please choose one",
-                "data": null
-            }
-        ],
-        "id": 259,
-        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/pram_periwinkle.png",
-        "title": "choose your preferred wheels",
-        "subtitle": "please choose one",
-        "data": [{
-                "term_id": 263,
-                "name": "air wheels",
-                "slug": "air-wheels",
-                "term_group": 0,
-                "term_taxonomy_id": 263,
-                "taxonomy": "stroller_category",
-                "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                "parent": 259,
-                "count": 0,
-                "filter": "raw",
-                "term_order": "0",
-                "children": [
-
-                ],
-                "id": 263,
-                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/air_wheels_periwinkle.png",
-                "title": "Some title",
-                "subtitle": "please choose one",
-                "data": null
-            },
-            {
-                "term_id": 262,
-                "name": "EVA wheels",
-                "slug": "eva-wheels",
-                "term_group": 0,
-                "term_taxonomy_id": 262,
-                "taxonomy": "stroller_category",
-                "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                "parent": 259,
-                "count": 0,
-                "filter": "raw",
-                "term_order": "0",
-                "children": [
-
-                ],
-                "id": 262,
-                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/eva_wheels_periwinkle.png",
-                "title": "Some title",
-                "subtitle": "please choose one",
-                "data": null
-            },
-            {
-                "term_id": 264,
-                "name": "foam filled wheels",
-                "slug": "foam-filled-wheels",
-                "term_group": 0,
-                "term_taxonomy_id": 264,
-                "taxonomy": "stroller_category",
-                "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                "parent": 259,
-                "count": 0,
-                "filter": "raw",
-                "term_order": "0",
-                "children": [
-
-                ],
-                "id": 264,
-                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/foam_wheels_periwinkle.png",
-                "title": "Some titlex`",
-                "subtitle": "please choose one",
-                "data": null
-            }
-        ]
+      "term_id": 259,
+      "name": "pram",
+      "slug": "pram",
+      "term_group": 0,
+      "term_taxonomy_id": 259,
+      "taxonomy": "stroller_category",
+      "description": "",
+      "parent": 0,
+      "count": 6,
+      "filter": "raw",
+      "term_order": "0",
+      "children": [
+        {
+          "term_id": 263,
+          "name": "air wheels",
+          "slug": "air-wheels",
+          "term_group": 0,
+          "term_taxonomy_id": 263,
+          "taxonomy": "stroller_category",
+          "description": "short explanation of \r\nwhere to use these \r\nwheels",
+          "parent": 259,
+          "count": 1,
+          "filter": "raw",
+          "term_order": "0",
+          "children": [
+            
+          ],
+          "id": 263,
+          "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/air_wheels_periwinkle.png",
+          "title": "Some title",
+          "subtitle": "please choose one",
+          "data": null
+        },
+        {
+          "term_id": 262,
+          "name": "EVA wheels",
+          "slug": "eva-wheels",
+          "term_group": 0,
+          "term_taxonomy_id": 262,
+          "taxonomy": "stroller_category",
+          "description": "short explanation of \r\nwhere to use these \r\nwheels",
+          "parent": 259,
+          "count": 2,
+          "filter": "raw",
+          "term_order": "0",
+          "children": [
+            
+          ],
+          "id": 262,
+          "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/eva_wheels_periwinkle.png",
+          "title": "Some title",
+          "subtitle": "please choose one",
+          "data": null
+        },
+        {
+          "term_id": 264,
+          "name": "foam filled wheels",
+          "slug": "foam-filled-wheels",
+          "term_group": 0,
+          "term_taxonomy_id": 264,
+          "taxonomy": "stroller_category",
+          "description": "short explanation of \r\nwhere to use these \r\nwheels",
+          "parent": 259,
+          "count": 3,
+          "filter": "raw",
+          "term_order": "0",
+          "children": [
+            
+          ],
+          "id": 264,
+          "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/foam_wheels_periwinkle.png",
+          "title": "Some titlex`",
+          "subtitle": "please choose one",
+          "data": null
+        }
+      ],
+      "id": 259,
+      "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/pram_periwinkle.png",
+      "title": "choose your preferred wheels",
+      "subtitle": "please choose one",
+      "data": [
+        {
+          "term_id": 263,
+          "name": "air wheels",
+          "slug": "air-wheels",
+          "term_group": 0,
+          "term_taxonomy_id": 263,
+          "taxonomy": "stroller_category",
+          "description": "short explanation of \r\nwhere to use these \r\nwheels",
+          "parent": 259,
+          "count": 1,
+          "filter": "raw",
+          "term_order": "0",
+          "children": [
+            
+          ],
+          "id": 263,
+          "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/air_wheels_periwinkle.png",
+          "title": "Some title",
+          "subtitle": "please choose one",
+          "data": null
+        },
+        {
+          "term_id": 262,
+          "name": "EVA wheels",
+          "slug": "eva-wheels",
+          "term_group": 0,
+          "term_taxonomy_id": 262,
+          "taxonomy": "stroller_category",
+          "description": "short explanation of \r\nwhere to use these \r\nwheels",
+          "parent": 259,
+          "count": 2,
+          "filter": "raw",
+          "term_order": "0",
+          "children": [
+            
+          ],
+          "id": 262,
+          "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/eva_wheels_periwinkle.png",
+          "title": "Some title",
+          "subtitle": "please choose one",
+          "data": null
+        },
+        {
+          "term_id": 264,
+          "name": "foam filled wheels",
+          "slug": "foam-filled-wheels",
+          "term_group": 0,
+          "term_taxonomy_id": 264,
+          "taxonomy": "stroller_category",
+          "description": "short explanation of \r\nwhere to use these \r\nwheels",
+          "parent": 259,
+          "count": 3,
+          "filter": "raw",
+          "term_order": "0",
+          "children": [
+            
+          ],
+          "id": 264,
+          "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/foam_wheels_periwinkle.png",
+          "title": "Some titlex`",
+          "subtitle": "please choose one",
+          "data": null
+        }
+      ]
     },
     {
-        "term_id": 260,
-        "name": "stroller",
-        "slug": "stroller",
-        "term_group": 0,
-        "term_taxonomy_id": 260,
-        "taxonomy": "stroller_category",
-        "description": "",
-        "parent": 0,
-        "count": 0,
-        "filter": "raw",
-        "term_order": "0",
-        "children": [{
-                "term_id": 266,
-                "name": "lightweight stroller",
-                "slug": "lightweight-stroller",
-                "term_group": 0,
-                "term_taxonomy_id": 266,
-                "taxonomy": "stroller_category",
-                "description": "",
-                "parent": 260,
-                "count": 0,
-                "filter": "raw",
-                "term_order": "0",
-                "children": [{
-                        "term_id": 271,
-                        "name": "kompaktbuggy (compact fold)",
-                        "slug": "kompaktbuggy-compact-fold",
-                        "term_group": 0,
-                        "term_taxonomy_id": 271,
-                        "taxonomy": "stroller_category",
-                        "description": "",
-                        "parent": 266,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 271,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/compact_fold_periwinkle-1.png",
-                        "title": "Some title",
-                        "subtitle": "please choose one",
-                        "data": null
-                    },
-                    {
-                        "term_id": 270,
-                        "name": "schirmbuggy (umbrella fold)",
-                        "slug": "schirmbuggy-umbrella-fold",
-                        "term_group": 0,
-                        "term_taxonomy_id": 270,
-                        "taxonomy": "stroller_category",
-                        "description": "",
-                        "parent": 266,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 270,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/umbrella_fold_periwinkle.png",
-                        "title": "choose your preferred fold",
-                        "subtitle": "please choose one",
-                        "data": null
-                    }
-                ],
-                "id": 266,
-                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/lightweight_periwinkle.png",
-                "title": "choose your preferred fold",
-                "subtitle": "please choose one",
-                "data": [{
-                        "term_id": 271,
-                        "name": "kompaktbuggy (compact fold)",
-                        "slug": "kompaktbuggy-compact-fold",
-                        "term_group": 0,
-                        "term_taxonomy_id": 271,
-                        "taxonomy": "stroller_category",
-                        "description": "",
-                        "parent": 266,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 271,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/compact_fold_periwinkle-1.png",
-                        "title": "Some title",
-                        "subtitle": "please choose one",
-                        "data": null
-                    },
-                    {
-                        "term_id": 270,
-                        "name": "schirmbuggy (umbrella fold)",
-                        "slug": "schirmbuggy-umbrella-fold",
-                        "term_group": 0,
-                        "term_taxonomy_id": 270,
-                        "taxonomy": "stroller_category",
-                        "description": "",
-                        "parent": 266,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 270,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/umbrella_fold_periwinkle.png",
-                        "title": "choose your preferred fold",
-                        "subtitle": "please choose one",
-                        "data": null
-                    }
-                ]
+      "term_id": 260,
+      "name": "stroller",
+      "slug": "stroller",
+      "term_group": 0,
+      "term_taxonomy_id": 260,
+      "taxonomy": "stroller_category",
+      "description": "",
+      "parent": 0,
+      "count": 9,
+      "filter": "raw",
+      "term_order": "1",
+      "children": [
+        {
+          "term_id": 266,
+          "name": "lightweight stroller",
+          "slug": "lightweight-stroller",
+          "term_group": 0,
+          "term_taxonomy_id": 266,
+          "taxonomy": "stroller_category",
+          "description": "",
+          "parent": 260,
+          "count": 5,
+          "filter": "raw",
+          "term_order": "0",
+          "children": [
+            {
+              "term_id": 271,
+              "name": "kompaktbuggy (compact fold)",
+              "slug": "kompaktbuggy-compact-fold",
+              "term_group": 0,
+              "term_taxonomy_id": 271,
+              "taxonomy": "stroller_category",
+              "description": "",
+              "parent": 266,
+              "count": 3,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 271,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/compact_fold_periwinkle-1.png",
+              "title": "Some title",
+              "subtitle": "please choose one",
+              "data": null
             },
             {
-                "term_id": 265,
-                "name": "sporty, all around stroller",
-                "slug": "sporty-all-around-stroller",
-                "term_group": 0,
-                "term_taxonomy_id": 265,
-                "taxonomy": "stroller_category",
-                "description": "",
-                "parent": 260,
-                "count": 0,
-                "filter": "raw",
-                "term_order": "0",
-                "children": [{
-                        "term_id": 268,
-                        "name": "air wheels",
-                        "slug": "air-wheels-sporty-all-around-stroller",
-                        "term_group": 0,
-                        "term_taxonomy_id": 268,
-                        "taxonomy": "stroller_category",
-                        "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                        "parent": 265,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 268,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/air_wheels_periwinkle-1.png",
-                        "title": "Some title",
-                        "subtitle": "please choose one",
-                        "data": null
-                    },
-                    {
-                        "term_id": 267,
-                        "name": "EVA wheels",
-                        "slug": "eva-wheels-sporty-all-around-stroller",
-                        "term_group": 0,
-                        "term_taxonomy_id": 267,
-                        "taxonomy": "stroller_category",
-                        "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                        "parent": 265,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [{
-                                "term_id": 273,
-                                "name": "NO, stationary pushbar",
-                                "slug": "no-stationary-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 273,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 273,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            },
-                            {
-                                "term_id": 272,
-                                "name": "YES, adjustable pushbar",
-                                "slug": "yes-adjustable-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 272,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 272,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            }
-                        ],
-                        "id": 267,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/eva_wheels_periwinkle-1.png",
-                        "title": "height adjustable pushbar?",
-                        "subtitle": "short explanation of where to use these wheels ",
-                        "data": [{
-                                "term_id": 273,
-                                "name": "NO, stationary pushbar",
-                                "slug": "no-stationary-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 273,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 273,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            },
-                            {
-                                "term_id": 272,
-                                "name": "YES, adjustable pushbar",
-                                "slug": "yes-adjustable-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 272,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 272,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            }
-                        ]
-                    },
-                    {
-                        "term_id": 269,
-                        "name": "foam filled wheels",
-                        "slug": "foam-filled-wheels-sporty-all-around-stroller",
-                        "term_group": 0,
-                        "term_taxonomy_id": 269,
-                        "taxonomy": "stroller_category",
-                        "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                        "parent": 265,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 269,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/foam_wheels_periwinkle-1.png",
-                        "title": "Some title",
-                        "subtitle": "please choose one",
-                        "data": null
-                    }
-                ],
-                "id": 265,
-                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/sporty_periwinkle.png",
-                "title": "choose your preferred wheels",
-                "subtitle": "please choose one",
-                "data": [{
-                        "term_id": 268,
-                        "name": "air wheels",
-                        "slug": "air-wheels-sporty-all-around-stroller",
-                        "term_group": 0,
-                        "term_taxonomy_id": 268,
-                        "taxonomy": "stroller_category",
-                        "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                        "parent": 265,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 268,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/air_wheels_periwinkle-1.png",
-                        "title": "Some title",
-                        "subtitle": "please choose one",
-                        "data": null
-                    },
-                    {
-                        "term_id": 267,
-                        "name": "EVA wheels",
-                        "slug": "eva-wheels-sporty-all-around-stroller",
-                        "term_group": 0,
-                        "term_taxonomy_id": 267,
-                        "taxonomy": "stroller_category",
-                        "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                        "parent": 265,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [{
-                                "term_id": 273,
-                                "name": "NO, stationary pushbar",
-                                "slug": "no-stationary-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 273,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 273,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            },
-                            {
-                                "term_id": 272,
-                                "name": "YES, adjustable pushbar",
-                                "slug": "yes-adjustable-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 272,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 272,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            }
-                        ],
-                        "id": 267,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/eva_wheels_periwinkle-1.png",
-                        "title": "height adjustable pushbar?",
-                        "subtitle": "short explanation of where to use these wheels ",
-                        "data": [{
-                                "term_id": 273,
-                                "name": "NO, stationary pushbar",
-                                "slug": "no-stationary-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 273,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 273,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            },
-                            {
-                                "term_id": 272,
-                                "name": "YES, adjustable pushbar",
-                                "slug": "yes-adjustable-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 272,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 272,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            }
-                        ]
-                    },
-                    {
-                        "term_id": 269,
-                        "name": "foam filled wheels",
-                        "slug": "foam-filled-wheels-sporty-all-around-stroller",
-                        "term_group": 0,
-                        "term_taxonomy_id": 269,
-                        "taxonomy": "stroller_category",
-                        "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                        "parent": 265,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 269,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/foam_wheels_periwinkle-1.png",
-                        "title": "Some title",
-                        "subtitle": "please choose one",
-                        "data": null
-                    }
-                ]
+              "term_id": 270,
+              "name": "schirmbuggy (umbrella fold)",
+              "slug": "schirmbuggy-umbrella-fold",
+              "term_group": 0,
+              "term_taxonomy_id": 270,
+              "taxonomy": "stroller_category",
+              "description": "",
+              "parent": 266,
+              "count": 2,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 270,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/umbrella_fold_periwinkle.png",
+              "title": "choose your preferred fold",
+              "subtitle": "please choose one",
+              "data": null
             }
-        ],
-        "id": 260,
-        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/stroller_periwinkle.png",
-        "title": "choose your preferred buggy",
-        "subtitle": "please choose one",
-        "data": [{
-                "term_id": 266,
-                "name": "lightweight stroller",
-                "slug": "lightweight-stroller",
-                "term_group": 0,
-                "term_taxonomy_id": 266,
-                "taxonomy": "stroller_category",
-                "description": "",
-                "parent": 260,
-                "count": 0,
-                "filter": "raw",
-                "term_order": "0",
-                "children": [{
-                        "term_id": 271,
-                        "name": "kompaktbuggy (compact fold)",
-                        "slug": "kompaktbuggy-compact-fold",
-                        "term_group": 0,
-                        "term_taxonomy_id": 271,
-                        "taxonomy": "stroller_category",
-                        "description": "",
-                        "parent": 266,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 271,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/compact_fold_periwinkle-1.png",
-                        "title": "Some title",
-                        "subtitle": "please choose one",
-                        "data": null
-                    },
-                    {
-                        "term_id": 270,
-                        "name": "schirmbuggy (umbrella fold)",
-                        "slug": "schirmbuggy-umbrella-fold",
-                        "term_group": 0,
-                        "term_taxonomy_id": 270,
-                        "taxonomy": "stroller_category",
-                        "description": "",
-                        "parent": 266,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 270,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/umbrella_fold_periwinkle.png",
-                        "title": "choose your preferred fold",
-                        "subtitle": "please choose one",
-                        "data": null
-                    }
-                ],
-                "id": 266,
-                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/lightweight_periwinkle.png",
-                "title": "choose your preferred fold",
-                "subtitle": "please choose one",
-                "data": [{
-                        "term_id": 271,
-                        "name": "kompaktbuggy (compact fold)",
-                        "slug": "kompaktbuggy-compact-fold",
-                        "term_group": 0,
-                        "term_taxonomy_id": 271,
-                        "taxonomy": "stroller_category",
-                        "description": "",
-                        "parent": 266,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 271,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/compact_fold_periwinkle-1.png",
-                        "title": "Some title",
-                        "subtitle": "please choose one",
-                        "data": null
-                    },
-                    {
-                        "term_id": 270,
-                        "name": "schirmbuggy (umbrella fold)",
-                        "slug": "schirmbuggy-umbrella-fold",
-                        "term_group": 0,
-                        "term_taxonomy_id": 270,
-                        "taxonomy": "stroller_category",
-                        "description": "",
-                        "parent": 266,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 270,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/umbrella_fold_periwinkle.png",
-                        "title": "choose your preferred fold",
-                        "subtitle": "please choose one",
-                        "data": null
-                    }
-                ]
+          ],
+          "id": 266,
+          "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/lightweight_periwinkle.png",
+          "title": "choose your preferred fold",
+          "subtitle": "please choose one",
+          "data": [
+            {
+              "term_id": 271,
+              "name": "kompaktbuggy (compact fold)",
+              "slug": "kompaktbuggy-compact-fold",
+              "term_group": 0,
+              "term_taxonomy_id": 271,
+              "taxonomy": "stroller_category",
+              "description": "",
+              "parent": 266,
+              "count": 3,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 271,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/compact_fold_periwinkle-1.png",
+              "title": "Some title",
+              "subtitle": "please choose one",
+              "data": null
             },
             {
-                "term_id": 265,
-                "name": "sporty, all around stroller",
-                "slug": "sporty-all-around-stroller",
-                "term_group": 0,
-                "term_taxonomy_id": 265,
-                "taxonomy": "stroller_category",
-                "description": "",
-                "parent": 260,
-                "count": 0,
-                "filter": "raw",
-                "term_order": "0",
-                "children": [{
-                        "term_id": 268,
-                        "name": "air wheels",
-                        "slug": "air-wheels-sporty-all-around-stroller",
-                        "term_group": 0,
-                        "term_taxonomy_id": 268,
-                        "taxonomy": "stroller_category",
-                        "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                        "parent": 265,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 268,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/air_wheels_periwinkle-1.png",
-                        "title": "Some title",
-                        "subtitle": "please choose one",
-                        "data": null
-                    },
-                    {
-                        "term_id": 267,
-                        "name": "EVA wheels",
-                        "slug": "eva-wheels-sporty-all-around-stroller",
-                        "term_group": 0,
-                        "term_taxonomy_id": 267,
-                        "taxonomy": "stroller_category",
-                        "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                        "parent": 265,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [{
-                                "term_id": 273,
-                                "name": "NO, stationary pushbar",
-                                "slug": "no-stationary-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 273,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 273,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            },
-                            {
-                                "term_id": 272,
-                                "name": "YES, adjustable pushbar",
-                                "slug": "yes-adjustable-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 272,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 272,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            }
-                        ],
-                        "id": 267,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/eva_wheels_periwinkle-1.png",
-                        "title": "height adjustable pushbar?",
-                        "subtitle": "short explanation of where to use these wheels ",
-                        "data": [{
-                                "term_id": 273,
-                                "name": "NO, stationary pushbar",
-                                "slug": "no-stationary-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 273,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 273,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            },
-                            {
-                                "term_id": 272,
-                                "name": "YES, adjustable pushbar",
-                                "slug": "yes-adjustable-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 272,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 272,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            }
-                        ]
-                    },
-                    {
-                        "term_id": 269,
-                        "name": "foam filled wheels",
-                        "slug": "foam-filled-wheels-sporty-all-around-stroller",
-                        "term_group": 0,
-                        "term_taxonomy_id": 269,
-                        "taxonomy": "stroller_category",
-                        "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                        "parent": 265,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 269,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/foam_wheels_periwinkle-1.png",
-                        "title": "Some title",
-                        "subtitle": "please choose one",
-                        "data": null
-                    }
-                ],
-                "id": 265,
-                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/sporty_periwinkle.png",
-                "title": "choose your preferred wheels",
-                "subtitle": "please choose one",
-                "data": [{
-                        "term_id": 268,
-                        "name": "air wheels",
-                        "slug": "air-wheels-sporty-all-around-stroller",
-                        "term_group": 0,
-                        "term_taxonomy_id": 268,
-                        "taxonomy": "stroller_category",
-                        "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                        "parent": 265,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 268,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/air_wheels_periwinkle-1.png",
-                        "title": "Some title",
-                        "subtitle": "please choose one",
-                        "data": null
-                    },
-                    {
-                        "term_id": 267,
-                        "name": "EVA wheels",
-                        "slug": "eva-wheels-sporty-all-around-stroller",
-                        "term_group": 0,
-                        "term_taxonomy_id": 267,
-                        "taxonomy": "stroller_category",
-                        "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                        "parent": 265,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [{
-                                "term_id": 273,
-                                "name": "NO, stationary pushbar",
-                                "slug": "no-stationary-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 273,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 273,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            },
-                            {
-                                "term_id": 272,
-                                "name": "YES, adjustable pushbar",
-                                "slug": "yes-adjustable-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 272,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 272,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            }
-                        ],
-                        "id": 267,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/eva_wheels_periwinkle-1.png",
-                        "title": "height adjustable pushbar?",
-                        "subtitle": "short explanation of where to use these wheels ",
-                        "data": [{
-                                "term_id": 273,
-                                "name": "NO, stationary pushbar",
-                                "slug": "no-stationary-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 273,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 273,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            },
-                            {
-                                "term_id": 272,
-                                "name": "YES, adjustable pushbar",
-                                "slug": "yes-adjustable-pushbar",
-                                "term_group": 0,
-                                "term_taxonomy_id": 272,
-                                "taxonomy": "stroller_category",
-                                "description": "",
-                                "parent": 267,
-                                "count": 0,
-                                "filter": "raw",
-                                "term_order": "0",
-                                "children": [
-
-                                ],
-                                "id": 272,
-                                "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
-                                "title": "",
-                                "subtitle": "please choose one",
-                                "data": null
-                            }
-                        ]
-                    },
-                    {
-                        "term_id": 269,
-                        "name": "foam filled wheels",
-                        "slug": "foam-filled-wheels-sporty-all-around-stroller",
-                        "term_group": 0,
-                        "term_taxonomy_id": 269,
-                        "taxonomy": "stroller_category",
-                        "description": "short explanation of \r\nwhere to use these \r\nwheels",
-                        "parent": 265,
-                        "count": 0,
-                        "filter": "raw",
-                        "term_order": "0",
-                        "children": [
-
-                        ],
-                        "id": 269,
-                        "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/foam_wheels_periwinkle-1.png",
-                        "title": "Some title",
-                        "subtitle": "please choose one",
-                        "data": null
-                    }
-                ]
+              "term_id": 270,
+              "name": "schirmbuggy (umbrella fold)",
+              "slug": "schirmbuggy-umbrella-fold",
+              "term_group": 0,
+              "term_taxonomy_id": 270,
+              "taxonomy": "stroller_category",
+              "description": "",
+              "parent": 266,
+              "count": 2,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 270,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/umbrella_fold_periwinkle.png",
+              "title": "choose your preferred fold",
+              "subtitle": "please choose one",
+              "data": null
             }
-        ]
+          ]
+        },
+        {
+          "term_id": 265,
+          "name": "sporty, all around stroller",
+          "slug": "sporty-all-around-stroller",
+          "term_group": 0,
+          "term_taxonomy_id": 265,
+          "taxonomy": "stroller_category",
+          "description": "",
+          "parent": 260,
+          "count": 4,
+          "filter": "raw",
+          "term_order": "0",
+          "children": [
+            {
+              "term_id": 268,
+              "name": "air wheels",
+              "slug": "air-wheels-sporty-all-around-stroller",
+              "term_group": 0,
+              "term_taxonomy_id": 268,
+              "taxonomy": "stroller_category",
+              "description": "short explanation of \r\nwhere to use these \r\nwheels",
+              "parent": 265,
+              "count": 1,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 268,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/air_wheels_periwinkle-1.png",
+              "title": "Some title",
+              "subtitle": "please choose one",
+              "data": null
+            },
+            {
+              "term_id": 267,
+              "name": "EVA wheels",
+              "slug": "eva-wheels-sporty-all-around-stroller",
+              "term_group": 0,
+              "term_taxonomy_id": 267,
+              "taxonomy": "stroller_category",
+              "description": "short explanation of \r\nwhere to use these \r\nwheels",
+              "parent": 265,
+              "count": 2,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                {
+                  "term_id": 273,
+                  "name": "NO, stationary pushbar",
+                  "slug": "no-stationary-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 273,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 273,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                },
+                {
+                  "term_id": 272,
+                  "name": "YES, adjustable pushbar",
+                  "slug": "yes-adjustable-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 272,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 272,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                }
+              ],
+              "id": 267,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/eva_wheels_periwinkle-1.png",
+              "title": "height adjustable pushbar?",
+              "subtitle": "short explanation of where to use these wheels ",
+              "data": [
+                {
+                  "term_id": 273,
+                  "name": "NO, stationary pushbar",
+                  "slug": "no-stationary-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 273,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 273,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                },
+                {
+                  "term_id": 272,
+                  "name": "YES, adjustable pushbar",
+                  "slug": "yes-adjustable-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 272,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 272,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                }
+              ]
+            },
+            {
+              "term_id": 269,
+              "name": "foam filled wheels",
+              "slug": "foam-filled-wheels-sporty-all-around-stroller",
+              "term_group": 0,
+              "term_taxonomy_id": 269,
+              "taxonomy": "stroller_category",
+              "description": "short explanation of \r\nwhere to use these \r\nwheels",
+              "parent": 265,
+              "count": 1,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 269,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/foam_wheels_periwinkle-1.png",
+              "title": "Some title",
+              "subtitle": "please choose one",
+              "data": null
+            }
+          ],
+          "id": 265,
+          "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/sporty_periwinkle.png",
+          "title": "choose your preferred wheels",
+          "subtitle": "please choose one",
+          "data": [
+            {
+              "term_id": 268,
+              "name": "air wheels",
+              "slug": "air-wheels-sporty-all-around-stroller",
+              "term_group": 0,
+              "term_taxonomy_id": 268,
+              "taxonomy": "stroller_category",
+              "description": "short explanation of \r\nwhere to use these \r\nwheels",
+              "parent": 265,
+              "count": 1,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 268,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/air_wheels_periwinkle-1.png",
+              "title": "Some title",
+              "subtitle": "please choose one",
+              "data": null
+            },
+            {
+              "term_id": 267,
+              "name": "EVA wheels",
+              "slug": "eva-wheels-sporty-all-around-stroller",
+              "term_group": 0,
+              "term_taxonomy_id": 267,
+              "taxonomy": "stroller_category",
+              "description": "short explanation of \r\nwhere to use these \r\nwheels",
+              "parent": 265,
+              "count": 2,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                {
+                  "term_id": 273,
+                  "name": "NO, stationary pushbar",
+                  "slug": "no-stationary-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 273,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 273,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                },
+                {
+                  "term_id": 272,
+                  "name": "YES, adjustable pushbar",
+                  "slug": "yes-adjustable-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 272,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 272,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                }
+              ],
+              "id": 267,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/eva_wheels_periwinkle-1.png",
+              "title": "height adjustable pushbar?",
+              "subtitle": "short explanation of where to use these wheels ",
+              "data": [
+                {
+                  "term_id": 273,
+                  "name": "NO, stationary pushbar",
+                  "slug": "no-stationary-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 273,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 273,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                },
+                {
+                  "term_id": 272,
+                  "name": "YES, adjustable pushbar",
+                  "slug": "yes-adjustable-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 272,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 272,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                }
+              ]
+            },
+            {
+              "term_id": 269,
+              "name": "foam filled wheels",
+              "slug": "foam-filled-wheels-sporty-all-around-stroller",
+              "term_group": 0,
+              "term_taxonomy_id": 269,
+              "taxonomy": "stroller_category",
+              "description": "short explanation of \r\nwhere to use these \r\nwheels",
+              "parent": 265,
+              "count": 1,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 269,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/foam_wheels_periwinkle-1.png",
+              "title": "Some title",
+              "subtitle": "please choose one",
+              "data": null
+            }
+          ]
+        }
+      ],
+      "id": 260,
+      "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/stroller_periwinkle.png",
+      "title": "choose your preferred buggy",
+      "subtitle": "please choose one",
+      "data": [
+        {
+          "term_id": 266,
+          "name": "lightweight stroller",
+          "slug": "lightweight-stroller",
+          "term_group": 0,
+          "term_taxonomy_id": 266,
+          "taxonomy": "stroller_category",
+          "description": "",
+          "parent": 260,
+          "count": 5,
+          "filter": "raw",
+          "term_order": "0",
+          "children": [
+            {
+              "term_id": 271,
+              "name": "kompaktbuggy (compact fold)",
+              "slug": "kompaktbuggy-compact-fold",
+              "term_group": 0,
+              "term_taxonomy_id": 271,
+              "taxonomy": "stroller_category",
+              "description": "",
+              "parent": 266,
+              "count": 3,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 271,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/compact_fold_periwinkle-1.png",
+              "title": "Some title",
+              "subtitle": "please choose one",
+              "data": null
+            },
+            {
+              "term_id": 270,
+              "name": "schirmbuggy (umbrella fold)",
+              "slug": "schirmbuggy-umbrella-fold",
+              "term_group": 0,
+              "term_taxonomy_id": 270,
+              "taxonomy": "stroller_category",
+              "description": "",
+              "parent": 266,
+              "count": 2,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 270,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/umbrella_fold_periwinkle.png",
+              "title": "choose your preferred fold",
+              "subtitle": "please choose one",
+              "data": null
+            }
+          ],
+          "id": 266,
+          "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/lightweight_periwinkle.png",
+          "title": "choose your preferred fold",
+          "subtitle": "please choose one",
+          "data": [
+            {
+              "term_id": 271,
+              "name": "kompaktbuggy (compact fold)",
+              "slug": "kompaktbuggy-compact-fold",
+              "term_group": 0,
+              "term_taxonomy_id": 271,
+              "taxonomy": "stroller_category",
+              "description": "",
+              "parent": 266,
+              "count": 3,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 271,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/compact_fold_periwinkle-1.png",
+              "title": "Some title",
+              "subtitle": "please choose one",
+              "data": null
+            },
+            {
+              "term_id": 270,
+              "name": "schirmbuggy (umbrella fold)",
+              "slug": "schirmbuggy-umbrella-fold",
+              "term_group": 0,
+              "term_taxonomy_id": 270,
+              "taxonomy": "stroller_category",
+              "description": "",
+              "parent": 266,
+              "count": 2,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 270,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/umbrella_fold_periwinkle.png",
+              "title": "choose your preferred fold",
+              "subtitle": "please choose one",
+              "data": null
+            }
+          ]
+        },
+        {
+          "term_id": 265,
+          "name": "sporty, all around stroller",
+          "slug": "sporty-all-around-stroller",
+          "term_group": 0,
+          "term_taxonomy_id": 265,
+          "taxonomy": "stroller_category",
+          "description": "",
+          "parent": 260,
+          "count": 4,
+          "filter": "raw",
+          "term_order": "0",
+          "children": [
+            {
+              "term_id": 268,
+              "name": "air wheels",
+              "slug": "air-wheels-sporty-all-around-stroller",
+              "term_group": 0,
+              "term_taxonomy_id": 268,
+              "taxonomy": "stroller_category",
+              "description": "short explanation of \r\nwhere to use these \r\nwheels",
+              "parent": 265,
+              "count": 1,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 268,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/air_wheels_periwinkle-1.png",
+              "title": "Some title",
+              "subtitle": "please choose one",
+              "data": null
+            },
+            {
+              "term_id": 267,
+              "name": "EVA wheels",
+              "slug": "eva-wheels-sporty-all-around-stroller",
+              "term_group": 0,
+              "term_taxonomy_id": 267,
+              "taxonomy": "stroller_category",
+              "description": "short explanation of \r\nwhere to use these \r\nwheels",
+              "parent": 265,
+              "count": 2,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                {
+                  "term_id": 273,
+                  "name": "NO, stationary pushbar",
+                  "slug": "no-stationary-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 273,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 273,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                },
+                {
+                  "term_id": 272,
+                  "name": "YES, adjustable pushbar",
+                  "slug": "yes-adjustable-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 272,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 272,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                }
+              ],
+              "id": 267,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/eva_wheels_periwinkle-1.png",
+              "title": "height adjustable pushbar?",
+              "subtitle": "short explanation of where to use these wheels ",
+              "data": [
+                {
+                  "term_id": 273,
+                  "name": "NO, stationary pushbar",
+                  "slug": "no-stationary-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 273,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 273,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                },
+                {
+                  "term_id": 272,
+                  "name": "YES, adjustable pushbar",
+                  "slug": "yes-adjustable-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 272,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 272,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                }
+              ]
+            },
+            {
+              "term_id": 269,
+              "name": "foam filled wheels",
+              "slug": "foam-filled-wheels-sporty-all-around-stroller",
+              "term_group": 0,
+              "term_taxonomy_id": 269,
+              "taxonomy": "stroller_category",
+              "description": "short explanation of \r\nwhere to use these \r\nwheels",
+              "parent": 265,
+              "count": 1,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 269,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/foam_wheels_periwinkle-1.png",
+              "title": "Some title",
+              "subtitle": "please choose one",
+              "data": null
+            }
+          ],
+          "id": 265,
+          "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/sporty_periwinkle.png",
+          "title": "choose your preferred wheels",
+          "subtitle": "please choose one",
+          "data": [
+            {
+              "term_id": 268,
+              "name": "air wheels",
+              "slug": "air-wheels-sporty-all-around-stroller",
+              "term_group": 0,
+              "term_taxonomy_id": 268,
+              "taxonomy": "stroller_category",
+              "description": "short explanation of \r\nwhere to use these \r\nwheels",
+              "parent": 265,
+              "count": 1,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 268,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/air_wheels_periwinkle-1.png",
+              "title": "Some title",
+              "subtitle": "please choose one",
+              "data": null
+            },
+            {
+              "term_id": 267,
+              "name": "EVA wheels",
+              "slug": "eva-wheels-sporty-all-around-stroller",
+              "term_group": 0,
+              "term_taxonomy_id": 267,
+              "taxonomy": "stroller_category",
+              "description": "short explanation of \r\nwhere to use these \r\nwheels",
+              "parent": 265,
+              "count": 2,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                {
+                  "term_id": 273,
+                  "name": "NO, stationary pushbar",
+                  "slug": "no-stationary-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 273,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 273,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                },
+                {
+                  "term_id": 272,
+                  "name": "YES, adjustable pushbar",
+                  "slug": "yes-adjustable-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 272,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 272,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                }
+              ],
+              "id": 267,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/eva_wheels_periwinkle-1.png",
+              "title": "height adjustable pushbar?",
+              "subtitle": "short explanation of where to use these wheels ",
+              "data": [
+                {
+                  "term_id": 273,
+                  "name": "NO, stationary pushbar",
+                  "slug": "no-stationary-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 273,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 273,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                },
+                {
+                  "term_id": 272,
+                  "name": "YES, adjustable pushbar",
+                  "slug": "yes-adjustable-pushbar",
+                  "term_group": 0,
+                  "term_taxonomy_id": 272,
+                  "taxonomy": "stroller_category",
+                  "description": "",
+                  "parent": 267,
+                  "count": 1,
+                  "filter": "raw",
+                  "term_order": "0",
+                  "children": [
+                    
+                  ],
+                  "id": 272,
+                  "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/adjustable_armbar_periwinkle.png",
+                  "title": "",
+                  "subtitle": "please choose one",
+                  "data": null
+                }
+              ]
+            },
+            {
+              "term_id": 269,
+              "name": "foam filled wheels",
+              "slug": "foam-filled-wheels-sporty-all-around-stroller",
+              "term_group": 0,
+              "term_taxonomy_id": 269,
+              "taxonomy": "stroller_category",
+              "description": "short explanation of \r\nwhere to use these \r\nwheels",
+              "parent": 265,
+              "count": 1,
+              "filter": "raw",
+              "term_order": "0",
+              "children": [
+                
+              ],
+              "id": 269,
+              "image": "https://www.joiebaby.dev/wp-content/uploads/2021/05/foam_wheels_periwinkle-1.png",
+              "title": "Some title",
+              "subtitle": "please choose one",
+              "data": null
+            }
+          ]
+        }
+      ]
     }
-]
+  ]

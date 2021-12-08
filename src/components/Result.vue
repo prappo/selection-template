@@ -1,42 +1,53 @@
 <template>
   <div v-if="show" @click="defaultAction" class="container mx-auto my-10">
-
     <div class="" role="region" aria-labelledby="caption" tabindex="0">
       <!-- <lottie-player v-if="swipe" src="https://assets10.lottiefiles.com/temp/lf20_isMAFS.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px; position:absolute;z-index:100;right:20px"  loop  autoplay></lottie-player> -->
       <table class="text-joie_text">
-        
         <thead>
           <tr style="font-family: 'Gotham Rounded Medium', sans-serif">
             <th></th>
-            <th>description</th>
-            <th>colors</th>
-            <th>retailers</th>
-            <th>weight</th>
-            <th>dimensions</th>
-            <th>wheel size</th>
-            <th class="nowrap">max child weight</th>
+            <th>{{ columns.description }}</th>
+            <th>{{ columns.colors }}</th>
+            <th>{{ columns.retailers }}</th>
+            <th>{{ columns.weight }}</th>
+            <th>{{ columns.dimensions }}</th>
+            <th>{{ columns.wheelSize }}</th>
+            <th class="nowrap">{{ columns.maxChildWeight }}</th>
             <th>
               <div class="flex flex-col">
-                <div class="nowrap">infant seats</div>
-                <div style="font-family: 'Gotham Rounded', sans-serif" class="text-sm font-thin">compatible</div>
+                <div class="nowrap">{{ columns.infantSeats }}</div>
+                <div
+                  style="font-family: 'Gotham Rounded', sans-serif"
+                  class="text-sm font-thin"
+                >
+                  {{ columns.compatible }}
+                </div>
               </div>
             </th>
             <th>
               <div>
-                <div>carry cots</div>
-                <div style="font-family: 'Gotham Rounded', sans-serif" class="font-thin">compatible</div>
+                <div>{{ columns.carryCots }}</div>
+                <div
+                  style="font-family: 'Gotham Rounded', sans-serif"
+                  class="font-thin"
+                >
+                   {{ columns.compatible }}
+                </div>
               </div>
             </th>
-            <th>flex comfort seat</th>
-            <th>height adjust seat</th>
-            <th>reversible seat</th>
-            <th>one-hand fold</th>
-            <th>armbar</th>
-            <th>recline positions</th>
+            <th>{{ columns.flexComfortSeat }}</th>
+            <th>{{ columns.heightAdjustSeat }}</th>
+            <th>{{ columns.reversibleSeat }}</th>
+            <th>{{ columns.oneHandFold }}</th>
+            <th>{{ columns.armbar }}</th>
+            <th>{{ columns.reclinePositions }}</th>
           </tr>
 
-          <TableRow v-for="product in data" :key="product.id" :product="product"></TableRow>
-
+          <TableRow
+            v-for="product in data"
+            :key="product.id"
+            :product="product"
+          ></TableRow>
         </thead>
         <tbody></tbody>
       </table>
@@ -45,7 +56,6 @@
 </template>
 
 <style scoped>
-
 table {
   /* font-family: "GothamRounded-Medium"; */
   font-family: "Gotham Rounded", sans-serif;
@@ -74,6 +84,7 @@ table th {
   color: #1b3d6f !important;
   white-space: nowrap;
 }
+
 table thead th {
   padding: 3px;
   position: sticky;
@@ -128,13 +139,13 @@ caption {
 </style>
 
 <script>
-import TableRow from './TableRow.vue'
+import TableRow from "./TableRow.vue";
 export default {
   props: ["data"],
   components: {
-    TableRow
+    TableRow,
   },
-  data(){
+  data() {
     return {
       swipe: true,
       show: false,
@@ -151,29 +162,85 @@ export default {
                     clip-rule="evenodd"
                   />
                 </svg>`,
-      noIcon: ``,
-    }
+      noIcon: `<svg
+                  style="color: #e16d69"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-10 w-10"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                    clip-rule="evenodd"
+                  />
+                </svg>`,
+      columns: {
+        description: document
+          .getElementById("app")
+          .getAttribute("data-col-description"),
+        colors: document.getElementById("app").getAttribute("data-col-colors"),
+        retailers: document
+          .getElementById("app")
+          .getAttribute("data-col-retailers"),
+        weight: document.getElementById("app").getAttribute("data-col-weight"),
+        dimensions: document
+          .getElementById("app")
+          .getAttribute("data-col-dimensions"),
+        wheelSize: document
+          .getElementById("app")
+          .getAttribute("data-col-wheel-size"),
+        maxChildWeight: document
+          .getElementById("app")
+          .getAttribute("data-col-max-child-weight"),
+        infantSeats: document
+          .getElementById("app")
+          .getAttribute("data-col-infant-seats"),
+        compatible: document
+          .getElementById("app")
+          .getAttribute("data-col-compatible"),
+        carryCots: document
+          .getElementById("app")
+          .getAttribute("data-col-carry-cots"),
+        flexComfortSeat: document
+          .getElementById("app")
+          .getAttribute("data-col-flex-comfort-seat"),
+        heightAdjustSeat: document
+          .getElementById("app")
+          .getAttribute("data-col-height-adjust-seat"),
+        reversibleSeat: document
+          .getElementById("app")
+          .getAttribute("data-col-reversible-seat"),
+        oneHandFold: document
+          .getElementById("app")
+          .getAttribute("data-col-one-hand-fold"),
+        armbar: document.getElementById("app").getAttribute("data-col-armbar"),
+        reclinePositions: document
+          .getElementById("app")
+          .getAttribute("data-col-recline-positions"),
+      },
+    };
   },
-  mounted(){
-    if(this.data){
-        this.show = true;
+  mounted() {
+    if (this.data) {
+      this.show = true;
     }
     // console.log(this.data.length);
     // console.log(this.data);
   },
-  methods:{
-    defaultAction: function(){
+  methods: {
+    defaultAction: function () {
       this.swipe = false;
     },
     handleScroll: function (event) {
-     this.swipe = false;
-    }
+      this.swipe = false;
+    },
   },
-  created () {
-    window.addEventListener('scroll', this.handleScroll);
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
   },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll);
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
-}
+};
 </script>

@@ -397,7 +397,7 @@
         "max_child_weight": "",
         "infant_seats": false,
         "carry_cots": false,
-        "flex_comfort_seat": "yes",
+        "flex_comfort_seat": "no",
         "height_adjust_seat": "yes",
         "reversible_seat": "yes",
         "one_hand_fold": "yes",
