@@ -9,7 +9,7 @@ export default defineConfig({
 
     },
     plugins: [vue()],
-    server: {
-        host: '192.168.0.117'
-      }
+    // server: {
+    //     host: '192.168.0.117'
+    //   }
 })
